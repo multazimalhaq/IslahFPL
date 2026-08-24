@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPL League Tracker</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+  /* ============================================================
+     THEME TOKENS
+     Setiap tema mengganti nilai token di bawah ini lewat atribut
+     [data-theme-preset] di <html>. Token semantik (--gold, --live)
+     TIDAK ikut berubah antar tema — warnanya tetap sama di semua
+     tema karena artinya khusus (juara/selesai, sedang berjalan).
+     ============================================================ */
+  :root{
+    /* default palette = "verdant" (dipakai kalau JS belum sempat set tema) */
+    --bg:#0B1F17;
+    --bg-alt:#123326;
+    --surface:#16402F;
+    --surface-alt:#1C4D39;
+    --border:#2A6349;
+    --border-soft:#1F4F3A;
+    --text:#F3FBF7;
+    --text-muted:#9FC7B3;
+    --text-dim:#6FA189;
+    --accent:#D4AF37;
+    --accent-strong:#F0C75E;
+    --on-accent:#241B04;
+    --hero-1:#0F3D2A;
+    --hero-2:#1B5E3F;
+    --hero-3:#2E7D52;
+    --on-hero:#FFFFFF;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 12px 28px -14px rgba(0,0,0,0.6);
+
+    /* semantik — tetap sama di semua tema */
+    --gold:#FFC94A;
+    --gold-text:#3D2900;
+    --live:#F2994A;
+    --live-text:#3D1F00;
+  }
+
+  html[data-theme-preset="midnight"]{
+    --bg:#0A0F1E;
+    --bg-alt:#111A30;
+    --surface:#16213D;
+    --surface-alt:#1C2A4A;
+    --border:#2C3B5E;
+    --border-soft:#22314F;
+    --text:#F1F5FF;
+    --text-muted:#93A3C4;
+    --text-dim:#5F6F94;
+    --accent:#4C8DFF;
+    --accent-strong:#7AAEFF;
+    --on-accent:#071026;
+    --hero-1:#0D1B3A;
+    --hero-2:#1B3D7A;
+    --hero-3:#2F5FC4;
+  }
+
+  html[data-theme-preset="ember"]{
+    --bg:#1E140D;
+    --bg-alt:#2B1D12;
+    --surface:#372417;
+    --surface-alt:#432C1C;
+    --border:#5C3D26;
+    --border-soft:#49301E;
+    --text:#FBF1E8;
+    --text-muted:#CBA98D;
+    --text-dim:#9C7A5F;
+    --accent:#FF7A33;
+    --accent-strong:#FF9857;
+    --on-accent:#2A1000;
+    --hero-1:#241207;
+    --hero-2:#6B3413;
+    --hero-3:#C1541B;
+  }
+
+  html[data-theme-preset="daylight"]{
+    --bg:#F5F7FA;
+    --bg-alt:#EAEEF5;
+    --surface:#FFFFFF;
+    --surface-alt:#F0F3F9;
+    --border:#D7DEEA;
+    --border-soft:#E3E8F1;
+    --text:#1A2233;
+    --text-muted:#5B6478;
+    --text-dim:#8791A3;
+    --accent:#2E6BE6;
+    --accent-strong:#4A82FF;
+    --on-accent:#FFFFFF;
+    --hero-1:#123B8C;
+    --hero-2:#1D57C7;
+    --hero-3:#2E6BE6;
+    --shadow: 0 1px 2px rgba(20,30,60,0.08), 0 12px 28px -14px rgba(20,30,60,0.18);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Public Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  a{color:inherit;}
+  .wrap{ max-width:1100px; margin:0 auto; padding:20px 20px 64px; display:flex; flex-direction:column; gap:22px; }
+
+  /* hero header — selalu gradasi gelap terlepas dari tema, biar teks putih selalu kebaca */
+  .hero{
+    background: linear-gradient(115deg, var(--hero-1) 0%, var(--hero-2) 52%, var(--hero-3) 100%);
+    border-radius:16px;
+    padding:22px 26px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    flex-wrap:wrap;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(120% 140% at 100% 0%, rgba(255,255,255,0.16), transparent 55%);
+    pointer-events:none;
+  }
+  .hero-left{display:flex; flex-direction:column; gap:6px; min-width:0; position:relative;}
+  .eyebrow{
+    font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+    color:rgba(255,255,255,0.85);
+  }
+  .title-row{ display:flex; align-items:center; gap:12px; }
+  .league-logo{
+    width:44px; height:44px; border-radius:10px; object-fit:cover; flex:0 0 auto;
+    background:rgba(255,255,255,0.14); box-shadow:0 2px 10px rgba(0,0,0,0.25);
+  }
+  h1{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:800;
+    font-size:clamp(32px,5vw,46px);
+    line-height:1.0;
+    margin:0;
+    text-wrap:balance;
+    color:var(--on-hero);
+    text-shadow:0 2px 12px rgba(0,0,0,0.25);
+  }
+  .subtitle{ color:rgba(255,255,255,0.88); font-size:14.5px; max-width:56ch; }
+  .subtitle-lead{ font-weight:700; color:var(--on-hero); }
+  .prize-list{ margin:4px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:2px; font-size:13.5px; }
+  .prize-note{ opacity:0.82; font-size:12.5px; }
+  .meta{
+    display:flex; flex-direction:column; align-items:flex-end; gap:6px;
+    font-size:12.5px; color:rgba(255,255,255,0.85); text-align:right; white-space:nowrap; position:relative;
+  }
+  .meta .count{
+    font-family:'IBM Plex Mono', monospace; color:var(--on-hero); font-size:13px; font-weight:600;
+    background:rgba(255,255,255,0.16); padding:4px 10px; border-radius:100px;
+  }
+
+  .section-title{ font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:22px; letter-spacing:0.01em; margin:0; }
+  .section-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  .section-note{ color:var(--text-muted); font-size:13px; }
+
+  /* countdown card */
+  .panel{
+    background:var(--surface); border:1px solid var(--border-soft); border-radius:14px;
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  .panel-head{
+    padding:16px 20px; border-bottom:1px solid var(--border-soft);
+    display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;
+  }
+  .panel-head h2{ font-family:'Barlow Condensed', sans-serif; font-size:21px; font-weight:700; margin:0; color:var(--text); }
+
+  .deadline-body{ padding:22px 20px 24px; display:flex; flex-direction:column; gap:20px; }
+  .countdown{ display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; }
+  .cd-box{
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+    background:var(--bg-alt); border:1px solid var(--border-soft); border-radius:10px;
+    padding:12px 16px; min-width:74px;
+  }
+  .cd-num{
+    font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:clamp(26px,4vw,36px);
+    color:var(--accent); font-variant-numeric:tabular-nums; line-height:1;
+  }
+  .cd-label{ font-size:10.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); }
+  .cd-sep{ font-family:'IBM Plex Mono', monospace; font-size:26px; color:var(--text-dim); }
+
+  .upcoming-list{ display:flex; flex-direction:column; gap:2px; }
+  .upcoming-title{ font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-dim); margin-bottom:6px; }
+  .upcoming-row{
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    padding:9px 4px; border-bottom:1px solid var(--border-soft); font-size:13.5px;
+  }
+  .upcoming-row:last-child{border-bottom:none;}
+  .upcoming-row .gw{font-weight:600; color:var(--text);}
+  .upcoming-row .dl{ font-family:'IBM Plex Mono', monospace; color:var(--text-muted); font-size:12.5px; }
+
+  .pick-team-btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    align-self:center;
+    background:linear-gradient(100deg, var(--accent), var(--accent-strong));
+    color:var(--on-accent); font-weight:700; font-size:14.5px;
+    text-decoration:none; padding:12px 26px; border-radius:100px;
+    box-shadow:0 6px 18px -6px color-mix(in srgb, var(--accent) 45%, transparent);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .pick-team-btn:hover{ transform:translateY(-1px); box-shadow:0 8px 22px -6px color-mix(in srgb, var(--accent) 60%, transparent); }
+  .pick-team-btn:focus-visible{ outline:2px solid var(--accent-strong); outline-offset:3px; }
+  .pick-team-btn svg{ width:16px; height:16px; flex:0 0 auto; }
+
+  /* month filter strip */
+  .month-scroll{ overflow-x:auto; margin:0 -20px; padding:4px 20px 10px; }
+  .month-strip{ display:flex; gap:10px; width:max-content; }
+  .month-card{
+    all:unset; cursor:pointer; box-sizing:border-box; width:154px; flex:0 0 auto;
+    background:var(--surface); border:1px solid var(--border-soft); border-radius:12px;
+    padding:14px 14px 12px; display:flex; flex-direction:column; gap:8px;
+    transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .month-card:hover{border-color:var(--accent-strong); transform:translateY(-1px);}
+  .month-card:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  .month-card.active{
+    border-color:var(--accent);
+    box-shadow:0 0 0 1px var(--accent), var(--shadow);
+    background:var(--surface-alt);
+  }
+  .month-card .m-label{ font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:18px; color:var(--text); }
+  .chip{
+    align-self:flex-start; font-size:10.5px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;
+    padding:2px 8px; border-radius:100px;
+  }
+  .chip.live{background:var(--live); color:var(--live-text);}
+  .chip.upcoming{background:var(--surface-alt); color:var(--text-muted); border:1px solid var(--border-soft);}
+  .chip.done{background:var(--gold); color:var(--gold-text);}
+  .m-leader{font-size:12.5px; color:var(--text-muted); min-height:16px;}
+  .m-leader b{color:var(--text); font-weight:600;}
+  .m-points{ font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:13px; color:var(--accent); }
+
+  .table-scroll{
+    overflow-x:auto; overflow-y:auto; max-height:660px;
+    scrollbar-width:thin; scrollbar-color:var(--border-soft) transparent;
+  }
+  .table-scroll::-webkit-scrollbar{ width:8px; height:8px; }
+  .table-scroll::-webkit-scrollbar-thumb{ background:var(--border-soft); border-radius:4px; }
+  .table-scroll::-webkit-scrollbar-track{ background:transparent; }
+  table{ width:100%; border-collapse:collapse; font-size:14px; min-width:640px; }
+  thead{ position:sticky; top:0; z-index:2; }
+  thead th{
+    text-align:left; font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-dim); padding:10px 14px; border-bottom:1px solid var(--border-soft); white-space:nowrap;
+    background:var(--surface);
+  }
+  tbody td{ padding:11px 14px; border-bottom:1px solid var(--border-soft); vertical-align:middle; }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr.winner{background:linear-gradient(90deg, color-mix(in srgb, var(--gold) 16%, transparent), color-mix(in srgb, var(--gold) 4%, transparent));}
+  .rank-cell{ font-family:'IBM Plex Mono', monospace; color:var(--text-muted); width:34px; }
+  .rank-cell .crown{margin-right:3px;}
+  .team-cell{display:flex; flex-direction:column; gap:1px;}
+  .team-link{ color:inherit; text-decoration:none; width:fit-content; }
+  .team-link .team-name{ border-bottom:1px dashed transparent; }
+  .team-link:hover .team-name{ color:var(--accent); border-bottom-color:var(--accent); }
+  .team-link:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:3px; }
+  .team-name{font-weight:600; color:var(--text);}
+  .manager-name{font-size:12px; color:var(--text-muted);}
+  .num-cell{ font-family:'IBM Plex Mono', monospace; font-variant-numeric:tabular-nums; text-align:right; font-weight:600; color:var(--text); }
+  .gw-cell{ font-family:'IBM Plex Mono', monospace; font-variant-numeric:tabular-nums; color:var(--text-muted); font-size:12.5px; }
+  .season-rank-cell{
+    font-family:'IBM Plex Mono', monospace; font-variant-numeric:tabular-nums; text-align:center;
+    color:var(--text-muted); font-size:13px;
+  }
+  .empty-state{ padding:40px 18px; text-align:center; color:var(--text-muted); font-size:14px; }
+
+  /* highlight card grid — jumlah kolom otomatis menyesuaikan berapa card yang aktif */
+  .four-col{ display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:16px; }
+  .highlight-card .panel-head h2{ font-size:17px; }
+  .highlight-body{ padding:4px 0; min-height:64px; }
+
+  .win-row{ display:flex; align-items:center; gap:12px; padding:11px 20px; border-bottom:1px solid var(--border-soft); }
+  .win-row:last-child{ border-bottom:none; }
+  .win-rank{ font-family:'IBM Plex Mono', monospace; color:var(--text-dim); width:16px; font-size:13px; }
+  .win-team{ flex:1; min-width:0; display:flex; flex-direction:column; gap:1px; }
+  .win-team .team-name{ font-weight:600; color:var(--text); font-size:13.5px; }
+  .win-team .manager-name{ font-size:11.5px; color:var(--text-muted); }
+  .win-count{
+    font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--accent); font-size:13.5px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent); padding:3px 11px; border-radius:100px; white-space:nowrap;
+  }
+
+  .spotlight{ display:flex; flex-direction:column; align-items:center; gap:4px; padding:22px 20px 20px; text-align:center; }
+  .spotlight .crown-big{ font-size:32px; line-height:1; }
+  .spotlight .s-team{ font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:23px; color:var(--text); text-wrap:balance; }
+  .spotlight .s-manager{ font-size:12.5px; color:var(--text-muted); }
+  .spotlight .s-points{ font-family:'IBM Plex Mono', monospace; font-size:26px; font-weight:600; color:var(--gold); margin-top:6px; line-height:1; }
+  .spotlight .s-points-label{ font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-dim); margin-top:2px; }
+  .runner-ups{ margin-top:14px; width:100%; border-top:1px solid var(--border-soft); }
+  .runner-row{
+    display:flex; justify-content:space-between; padding:8px 4px; font-size:12px;
+    border-bottom:1px solid var(--border-soft); color:var(--text-muted);
+  }
+  .runner-row:last-child{ border-bottom:none; }
+  .runner-row b{ color:var(--text); font-weight:600; }
+
+  footer{
+    border-top:1px solid var(--border-soft); padding-top:16px; font-size:12px; color:var(--text-dim);
+    display:flex; flex-direction:column; gap:4px;
+  }
+  footer a{text-decoration:underline; text-underline-offset:2px; color:var(--text-muted);}
+
+  @media (prefers-reduced-motion: reduce){ .month-card{transition:none;} }
+
+  /* ---- mobile: turn tables into stacked cards instead of a side-scroller ---- */
+  @media (max-width: 700px){
+    .table-scroll{ overflow-x:visible; }
+    table{ min-width:0; width:100%; }
+    thead{ display:none; }
+    tbody{ display:flex; flex-direction:column; gap:10px; }
+    tbody tr{
+      display:flex; flex-wrap:wrap; align-items:baseline; column-gap:12px; row-gap:6px;
+      background:var(--bg-alt); border:1px solid var(--border-soft); border-radius:12px;
+      padding:13px 14px;
+    }
+    tbody tr td{ border-bottom:none; padding:0; }
+    tbody tr.winner{ background:linear-gradient(135deg, color-mix(in srgb, var(--gold) 14%, transparent), color-mix(in srgb, var(--gold) 3%, transparent)); border-color:color-mix(in srgb, var(--gold) 40%, transparent); }
+
+    td[data-label]{ display:flex; flex-direction:column; gap:2px; }
+    td[data-label]::before{
+      content:attr(data-label); font-size:9.5px; font-weight:700; letter-spacing:0.07em;
+      text-transform:uppercase; color:var(--text-dim);
+    }
+
+    .rank-cell{ order:1; flex:0 0 auto; }
+    .rank-cell .crown{ margin-right:2px; }
+    .team-cell{ order:2; flex:1 1 140px; min-width:0; }
+    .num-cell{ order:3; flex:0 0 auto; text-align:right; font-size:18px; }
+    .season-rank-cell{
+      order:4; flex-basis:100%; flex-direction:row !important; align-items:center; gap:6px;
+      padding-top:8px !important; margin-top:2px; border-top:1px dashed var(--border-soft);
+    }
+    .season-rank-cell::before{ margin-bottom:0; margin-right:6px; }
+    .gw-cell{ order:5; flex-basis:100%; padding-top:8px !important; margin-top:2px; border-top:1px dashed var(--border-soft); white-space:normal; word-spacing:2px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-left">
+      <span class="eyebrow" id="hero-eyebrow">Fantasy Premier League</span>
+      <div class="title-row">
+        <img class="league-logo" id="league-logo" alt="Logo liga" loading="lazy" hidden>
+        <h1 id="league-name">Memuat&hellip;</h1>
+      </div>
+      <div class="subtitle" id="subtitle-block" hidden>
+        <span class="subtitle-lead">Memperebutkan:</span>
+        <ol class="prize-list" id="prize-list"></ol>
+      </div>
+    </div>
+    <div class="meta">
+      <span class="count" id="member-count"></span>
+      <span id="last-updated"></span>
+    </div>
+  </div>
+
+  <section class="four-col" id="highlights-row" hidden>
+    <div class="panel highlight-card">
+      <div class="panel-head">
+        <h2>Poin Tertinggi GW Berjalan</h2>
+        <span class="section-note" id="gw-best-note"></span>
+      </div>
+      <div class="highlight-body" id="gw-best-body"></div>
+    </div>
+    <div class="panel highlight-card" id="card-motm">
+      <div class="panel-head">
+        <h2>Manager of the Month</h2>
+        <span class="section-note" id="motm-note"></span>
+      </div>
+      <div class="highlight-body" id="motm-body"></div>
+    </div>
+    <div class="panel highlight-card" id="card-gwwins">
+      <div class="panel-head">
+        <h2>Terbanyak Rank #1 GW</h2>
+        <span class="section-note" id="gw-winners-note"></span>
+      </div>
+      <div class="highlight-body" id="gw-winners-body"></div>
+    </div>
+    <div class="panel highlight-card" id="card-season">
+      <div class="panel-head">
+        <h2>Puncak Klasemen</h2>
+        <span class="section-note" id="season-leader-note"></span>
+      </div>
+      <div class="highlight-body" id="season-leader-body"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="deadline-panel" hidden>
+    <div class="panel-head">
+      <h2>Deadline Berikutnya</h2>
+      <span class="section-note" id="next-gw-label"></span>
+    </div>
+    <div class="deadline-body">
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Hari</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Jam</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Menit</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Detik</span></div>
+      </div>
+      <div class="upcoming-list">
+        <div class="upcoming-title">Deadline berikutnya</div>
+        <div id="upcoming-rows"></div>
+      </div>
+      <a class="pick-team-btn" href="https://fantasy.premierleague.com/en/my-team" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        Pick Team
+      </a>
+    </div>
+  </section>
+
+  <section id="content" hidden>
+    <div class="section-head">
+      <h2 class="section-title">Manager of the Month</h2>
+      <span class="section-note">Bulan berjalan otomatis terpilih &mdash; klik bulan lain buat lihat rincian</span>
+    </div>
+    <div class="month-scroll">
+      <div class="month-strip" id="month-strip" role="tablist" aria-label="Pilih bulan"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="detail-panel" hidden>
+    <div class="panel-head">
+      <h2 id="detail-title">&mdash;</h2>
+      <span class="section-note" id="detail-sub"></span>
+    </div>
+    <div class="table-scroll">
+      <table id="detail-table">
+        <thead>
+          <tr><th>Pos. Bulan</th><th>Tim</th><th>Rincian GW</th><th style="text-align:right">Poin bulan</th><th style="text-align:center">Pos. Keseluruhan</th></tr>
+        </thead>
+        <tbody id="detail-body"></tbody>
+      </table>
+      <div class="empty-state" id="detail-empty" hidden></div>
+    </div>
+  </section>
+
+  <section class="panel" id="season-panel" hidden>
+    <div class="panel-head">
+      <h2>Klasemen Musim (Posisi Keseluruhan)</h2>
+      <span class="section-note" id="season-sub"></span>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Pos.</th><th>Tim</th><th style="text-align:right">Total poin</th></tr></thead>
+        <tbody id="season-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="empty-state" id="load-state">Memuat data liga&hellip;</div>
+
+  <footer id="page-footer" hidden>
+    <span>Data ditarik dari API publik Fantasy Premier League (fantasy.premierleague.com) lewat GitHub Actions terjadwal. Gameweek dikelompokkan ke bulan berdasarkan tanggal deadline gameweek (UTC). Bukan situs resmi Premier League &mdash; ini dashboard pihak ketiga buat liga classic kamu.</span>
+    <span id="footer-note"></span>
+  </footer>
+
+</div>
+
+<script type="module">
+import CONFIG from './config.js';
+
+// Set tema seawal mungkin, sebelum data selesai dimuat, biar gak ada "kedip" tema default.
+document.documentElement.setAttribute('data-theme-preset', CONFIG.theme || 'verdant');
+
+(async function(){
+  var loadState = document.getElementById('load-state');
+  var data;
+  try {
+    var res = await fetch('./data.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    data = await res.json();
+  } catch(err){
+    loadState.textContent = 'Gagal memuat data.json (' + err.message + '). Pastikan file ini di-serve dari GitHub Pages, bukan dibuka langsung dari file lokal.';
+    return;
+  }
+
+  var MANAGERS = data.managers || [];
+  if(!MANAGERS.length){
+    loadState.textContent = 'Data belum tersedia. Jalankan GitHub Action "Update FPL Data" sekali secara manual dulu (lihat CARA-PAKAI.md bagian Langkah 6), lalu refresh halaman ini.';
+    return;
+  }
+
+  loadState.hidden = true;
+  document.getElementById('deadline-panel').hidden = false;
+  document.getElementById('highlights-row').hidden = false;
+  document.getElementById('page-footer').hidden = false;
+
+  var PRIZES = CONFIG.prizes || {};
+  var showMonthly = PRIZES.monthlyPoints !== false;
+  var showGwWins = PRIZES.gwWins !== false;
+  var showSeason = PRIZES.seasonChampion !== false;
+
+  if(showMonthly){
+    document.getElementById('content').hidden = false;
+    document.getElementById('detail-panel').hidden = false;
+  } else {
+    document.getElementById('card-motm').hidden = true;
+  }
+  if(!showGwWins){ document.getElementById('card-gwwins').hidden = true; }
+  if(showSeason){
+    document.getElementById('season-panel').hidden = false;
+  } else {
+    document.getElementById('card-season').hidden = true;
+  }
+
+  var LEAGUE = data.league || {};
+  var EVENTS = data.events || [];
+  var PLAYED_EVENTS = data.playedEvents || [];
+  var CURRENT_EVENT = data.currentEvent;
+  var POINTS = data.points || {};
+
+  document.getElementById('league-name').textContent = LEAGUE.name || 'Liga FPL';
+  document.title = (LEAGUE.name || 'FPL League Tracker') + ' — FPL Tracker';
+  document.getElementById('hero-eyebrow').textContent = 'Fantasy Premier League' + (CONFIG.season ? ' ' + CONFIG.season : '');
+
+  /* ---------- logo (opsional) ---------- */
+  if(CONFIG.logoUrl){
+    var logoEl = document.getElementById('league-logo');
+    logoEl.src = CONFIG.logoUrl;
+    logoEl.alt = 'Logo ' + (LEAGUE.name || 'liga');
+    logoEl.hidden = false;
+  }
+
+  /* ---------- daftar hadiah (mengikuti toggle di config.js) ---------- */
+  var prizeItems = [];
+  if(showMonthly) prizeItems.push('Poin Tertinggi Tiap Bulan <span class="prize-note">(Manager of the Month)</span>');
+  if(showGwWins) prizeItems.push('Terbanyak Rank #1 di tiap Gameweek');
+  if(showSeason) prizeItems.push('Rank #1 Akhir Musim' + (CONFIG.season ? ' <span class="prize-note">(Juara ' + CONFIG.season + ')</span>' : ''));
+  if(prizeItems.length){
+    document.getElementById('prize-list').innerHTML = prizeItems.map(function(t){ return '<li>'+t+'</li>'; }).join('');
+    document.getElementById('subtitle-block').hidden = false;
+  }
+
+  /* ---------- countdown + upcoming deadlines ---------- */
+  var sortedEvents = EVENTS.slice().sort(function(a,b){ return new Date(a.deadline) - new Date(b.deadline); });
+  function futureEvents(){
+    var now = new Date();
+    return sortedEvents.filter(function(e){ return new Date(e.deadline).getTime() > now.getTime(); });
+  }
+  function fmtDeadline(iso){
+    var d = new Date(iso);
+    return d.toLocaleString('id-ID', {weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Jakarta'}) + ' WIB';
+  }
+  function pad2(n){ return String(n).padStart(2,'0'); }
+
+  var upcoming = futureEvents();
+  if(upcoming.length){
+    var next = upcoming[0];
+    document.getElementById('next-gw-label').textContent = 'Gameweek ' + next.id;
+    var rowsEl = document.getElementById('upcoming-rows');
+    upcoming.slice(0,5).forEach(function(ev){
+      var row = document.createElement('div');
+      row.className = 'upcoming-row';
+      row.innerHTML = '<span class="gw">Gameweek '+ev.id+'</span><span class="dl">'+fmtDeadline(ev.deadline)+'</span>';
+      rowsEl.appendChild(row);
+    });
+    function tick(){
+      var diff = new Date(next.deadline).getTime() - Date.now();
+      if(diff < 0) diff = 0;
+      var days = Math.floor(diff / 86400000);
+      var hours = Math.floor((diff % 86400000) / 3600000);
+      var mins = Math.floor((diff % 3600000) / 60000);
+      var secs = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent = pad2(days);
+      document.getElementById('cd-hours').textContent = pad2(hours);
+      document.getElementById('cd-mins').textContent = pad2(mins);
+      document.getElementById('cd-secs').textContent = pad2(secs);
+    }
+    tick();
+    setInterval(tick, 1000);
+  } else {
+    document.getElementById('deadline-panel').hidden = true;
+  }
+
+  /* ---------- month grouping ---------- */
+  function monthKey(iso){ var d=new Date(iso); return d.getUTCFullYear()+"-"+String(d.getUTCMonth()+1).padStart(2,"0"); }
+  function monthLabel(iso){ var d=new Date(iso); return d.toLocaleDateString('id-ID',{month:'long',year:'numeric',timeZone:'UTC'}); }
+  function monthLabelShort(iso){ var d=new Date(iso); return d.toLocaleDateString('id-ID',{month:'short',year:'2-digit',timeZone:'UTC'}); }
+
+  var monthsMap = {}; var monthOrder = [];
+  EVENTS.forEach(function(ev){
+    var key = monthKey(ev.deadline);
+    if(!monthsMap[key]){ monthsMap[key] = {key:key, label:monthLabel(ev.deadline), short:monthLabelShort(ev.deadline), events:[]}; monthOrder.push(key); }
+    monthsMap[key].events.push(ev);
+  });
+
+  function eventStatus(ev){
+    if(ev.id === CURRENT_EVENT) return 'live';
+    if(PLAYED_EVENTS.indexOf(ev.id) !== -1) return 'done';
+    return 'upcoming';
+  }
+  function monthStatus(m){
+    var anyLive=false, anyDone=false, anyUpcoming=false;
+    m.events.forEach(function(ev){ var s=eventStatus(ev); if(s==='live') anyLive=true; else if(s==='done') anyDone=true; else anyUpcoming=true; });
+    if(anyLive) return 'live';
+    if(anyDone && !anyUpcoming) return 'done';
+    if(anyDone && anyUpcoming) return 'live';
+    return 'upcoming';
+  }
+
+  /* ---------- overall season standings (posisi keseluruhan) ---------- */
+  var seasonRows = MANAGERS.map(function(mg){
+    var total = 0;
+    Object.keys(POINTS[mg.entry] || {}).forEach(function(k){ total += POINTS[mg.entry][k]; });
+    return {entry:mg.entry, team:mg.team, manager:mg.manager, total:total};
+  }).sort(function(a,b){ return b.total - a.total; });
+  var seasonRankByEntry = {};
+  seasonRows.forEach(function(r,i){ seasonRankByEntry[r.entry] = i+1; });
+
+  var recordedEventIds = Array.from(new Set(PLAYED_EVENTS.concat(CURRENT_EVENT ? [CURRENT_EVENT] : [])));
+  var lastPlayedId = recordedEventIds.slice().sort(function(a,b){return a-b;}).pop();
+
+  /* squad link: public FPL team page for a manager's picks in a given gameweek.
+     Only viewable once that gameweek's deadline has passed (FPL hides picks before deadline). */
+  function squadUrl(entry, eventId){
+    if(!eventId) return null;
+    return 'https://fantasy.premierleague.com/entry/'+entry+'/event/'+eventId;
+  }
+  function monthLastEvent(m){
+    var ids = m.events.map(function(e){return e.id;}).filter(function(id){ return PLAYED_EVENTS.indexOf(id)!==-1 || id===CURRENT_EVENT; });
+    return ids.length ? Math.max.apply(null, ids) : null;
+  }
+  function teamCellHtml(r, linkEvent, extraBefore){
+    var url = squadUrl(r.entry, linkEvent);
+    var nameHtml = url
+      ? '<a class="team-link" href="'+url+'" target="_blank" rel="noopener" title="Lihat squad GW'+linkEvent+'"><span class="team-name">'+r.team+'</span></a>'
+      : '<span class="team-name">'+r.team+'</span>';
+    return (extraBefore||'') + nameHtml + '<span class="manager-name">'+r.manager+'</span>';
+  }
+
+  function monthRows(m){
+    var playedIds = m.events.map(function(e){return e.id;}).filter(function(id){ return PLAYED_EVENTS.indexOf(id)!==-1 || id===CURRENT_EVENT; });
+    return MANAGERS.map(function(mg){
+      var total = 0, breakdown = [];
+      m.events.forEach(function(ev){
+        var pts = (POINTS[mg.entry] && POINTS[mg.entry][ev.id] !== undefined) ? POINTS[mg.entry][ev.id] : null;
+        if(pts !== null){ total += pts; }
+        breakdown.push({id:ev.id, points:pts});
+      });
+      return {entry:mg.entry, team:mg.team, manager:mg.manager, total:total, breakdown:breakdown, hasData: playedIds.length>0, seasonRank: seasonRankByEntry[mg.entry]};
+    }).filter(function(r){ return r.hasData; }).sort(function(a,b){ return b.total - a.total; });
+  }
+
+  var defaultKey = null;
+
+  if(showMonthly){
+    /* ---------- month filter strip ---------- */
+    var strip = document.getElementById('month-strip');
+    monthOrder.forEach(function(key){
+      var m = monthsMap[key];
+      var status = monthStatus(m);
+      var rows = monthRows(m);
+      var btn = document.createElement('button');
+      btn.className = 'month-card';
+      btn.setAttribute('role','tab');
+      btn.dataset.key = key;
+      var chipClass = status === 'done' ? 'done' : (status === 'live' ? 'live' : 'upcoming');
+      var chipLabel = status === 'done' ? 'Selesai' : (status === 'live' ? 'Berjalan' : 'Belum mulai');
+      var leaderHtml = '<span class="m-leader">Belum ada data</span>';
+      if(rows.length){
+        var leader = rows[0];
+        leaderHtml = '<span class="m-leader"><b>'+leader.team+'</b></span><span class="m-points">'+leader.total+' pts</span>';
+      }
+      btn.innerHTML = '<span class="m-label">'+m.short+'</span><span class="chip '+chipClass+'">'+chipLabel+'</span>'+leaderHtml;
+      btn.addEventListener('click', function(){ selectMonth(key); });
+      strip.appendChild(btn);
+    });
+
+    var fmtBreakdown = function(breakdown){
+      return breakdown.map(function(b){ return b.points === null ? ('GW'+b.id+':–') : ('GW'+b.id+':'+b.points); }).join('  ');
+    };
+    var rankBadge = function(rank){
+      if(!rank) return '–';
+      return '#'+rank;
+    };
+
+    var selectMonth = function(key){
+      Array.prototype.forEach.call(strip.querySelectorAll('.month-card'), function(el){ el.classList.toggle('active', el.dataset.key === key); });
+      var m = monthsMap[key];
+      var status = monthStatus(m);
+      var rows = monthRows(m);
+      document.getElementById('detail-title').textContent = m.label;
+      document.getElementById('detail-sub').textContent =
+        status === 'done' ? 'Bulan selesai — pemenang hadiah bulan ini · klik nama tim buat lihat squad' :
+        status === 'live' ? 'Sementara — masih berjalan · klik nama tim buat lihat squad' : 'Gameweek belum dimulai';
+
+      var body = document.getElementById('detail-body');
+      var empty = document.getElementById('detail-empty');
+      var table = document.getElementById('detail-table');
+      body.innerHTML = '';
+      if(!rows.length){
+        table.style.display = 'none'; empty.hidden = false; empty.textContent = 'Gameweek bulan ini belum dimainkan.'; return;
+      }
+      table.style.display = ''; empty.hidden = true;
+      var linkEvent = monthLastEvent(m);
+      rows.forEach(function(r, i){
+        var tr = document.createElement('tr');
+        var isWinner = status === 'done' && i === 0;
+        if(isWinner) tr.className = 'winner';
+        var winnerChip = isWinner ? '<span class="chip done" style="margin-bottom:3px;">Juara Bulan Ini</span>' : '';
+        tr.innerHTML =
+          '<td class="rank-cell" data-label="Pos. Bulan">'+(isWinner ? '<span class="crown">🏆</span>' : '')+(i+1)+'</td>'+
+          '<td class="team-cell">'+teamCellHtml(r, linkEvent, winnerChip)+'</td>'+
+          '<td class="gw-cell" data-label="Rincian GW">'+fmtBreakdown(r.breakdown)+'</td>'+
+          '<td class="num-cell" data-label="Poin Bulan">'+r.total+'</td>'+
+          '<td class="season-rank-cell" data-label="Pos. Keseluruhan">'+rankBadge(r.seasonRank)+'</td>';
+        body.appendChild(tr);
+      });
+    };
+
+    monthOrder.forEach(function(key){ if(monthStatus(monthsMap[key]) === 'live') defaultKey = key; });
+    if(!defaultKey){ for(var i=monthOrder.length-1;i>=0;i--){ if(monthStatus(monthsMap[monthOrder[i]]) !== 'upcoming'){ defaultKey = monthOrder[i]; break; } } }
+    if(!defaultKey) defaultKey = monthOrder[0];
+    selectMonth(defaultKey);
+    var activeCard = strip.querySelector('.month-card.active');
+    if(activeCard) activeCard.scrollIntoView({inline:'center', block:'nearest'});
+  }
+
+  if(showSeason){
+    /* ---------- season table ---------- */
+    var seasonBody = document.getElementById('season-body');
+    seasonRows.forEach(function(r, i){
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td class="rank-cell" data-label="Pos.">'+(i+1)+'</td><td class="team-cell">'+teamCellHtml(r, lastPlayedId)+'</td><td class="num-cell" data-label="Total Poin">'+r.total+'</td>';
+      seasonBody.appendChild(tr);
+    });
+    document.getElementById('season-sub').textContent = lastPlayedId ? ('Setelah GW'+lastPlayedId+' — klik nama tim buat lihat squad-nya') : '';
+
+    /* ---------- highlight card: juara sementara akhir musim ---------- */
+    document.getElementById('season-leader-note').textContent = lastPlayedId ? ('Sementara — setelah GW'+lastPlayedId) : 'Musim belum dimulai';
+    var seasonLeaderBody = document.getElementById('season-leader-body');
+    if(!seasonRows.length || !recordedEventIds.length){
+      seasonLeaderBody.innerHTML = '<div class="empty-state" style="padding:24px 18px;">Musim belum dimulai.</div>';
+    } else {
+      var leader = seasonRows[0];
+      var runners = seasonRows.slice(1,4);
+      var html = '<div class="spotlight">'+
+        '<span class="crown-big">🏆</span>'+
+        '<span class="s-team">'+leader.team+'</span>'+
+        '<span class="s-manager">'+leader.manager+'</span>'+
+        '<span class="s-points">'+leader.total+'</span>'+
+        '<span class="s-points-label">Total Poin</span>';
+      if(runners.length){
+        html += '<div class="runner-ups">';
+        runners.forEach(function(r, idx){
+          html += '<div class="runner-row"><span>#'+(idx+2)+' <b>'+r.team+'</b></span><span>'+r.total+' pts</span></div>';
+        });
+        html += '</div>';
+      }
+      html += '</div>';
+      seasonLeaderBody.innerHTML = html;
+    }
+  }
+
+  if(showGwWins){
+    /* ---------- highlight card: terbanyak rank #1 per gameweek ---------- */
+    var gwWinCounts = {};
+    recordedEventIds.forEach(function(eid){
+      var maxPts = null;
+      MANAGERS.forEach(function(mg){
+        var p = POINTS[mg.entry] && POINTS[mg.entry][eid];
+        if(p !== undefined && (maxPts === null || p > maxPts)) maxPts = p;
+      });
+      if(maxPts === null) return;
+      MANAGERS.forEach(function(mg){
+        var p = POINTS[mg.entry] && POINTS[mg.entry][eid];
+        if(p === maxPts){ gwWinCounts[mg.entry] = (gwWinCounts[mg.entry] || 0) + 1; }
+      });
+    });
+    var gwWinRows = MANAGERS.map(function(mg){
+      return {entry:mg.entry, team:mg.team, manager:mg.manager, count: gwWinCounts[mg.entry] || 0};
+    }).filter(function(r){ return r.count > 0; }).sort(function(a,b){ return b.count - a.count; });
+
+    document.getElementById('gw-winners-note').textContent = lastPlayedId ? ('Setelah GW'+lastPlayedId) : '';
+    var gwWinsBody = document.getElementById('gw-winners-body');
+    if(!gwWinRows.length){
+      gwWinsBody.innerHTML = '<div class="empty-state" style="padding:24px 18px;">Belum ada gameweek yang selesai.</div>';
+    } else {
+      gwWinRows.slice(0,6).forEach(function(r, i){
+        var row = document.createElement('div');
+        row.className = 'win-row';
+        row.innerHTML =
+          '<span class="win-rank">'+(i+1)+'</span>'+
+          '<span class="win-team"><span class="team-name">'+r.team+'</span><span class="manager-name">'+r.manager+'</span></span>'+
+          '<span class="win-count">'+r.count+'&times; GW</span>';
+        gwWinsBody.appendChild(row);
+      });
+    }
+  }
+
+  /* ---------- highlight card: poin tertinggi gameweek berjalan (selalu tampil) ---------- */
+  var focusEventId = CURRENT_EVENT || lastPlayedId;
+  document.getElementById('gw-best-note').textContent = focusEventId
+    ? (focusEventId === CURRENT_EVENT ? 'Live — GW'+focusEventId : 'Final — GW'+focusEventId)
+    : '';
+  var gwBestBody = document.getElementById('gw-best-body');
+  if(!focusEventId){
+    gwBestBody.innerHTML = '<div class="empty-state" style="padding:24px 18px;">Gameweek belum dimulai.</div>';
+  } else {
+    var gwRows = MANAGERS.map(function(mg){
+      var pts = POINTS[mg.entry] && POINTS[mg.entry][focusEventId];
+      return {entry:mg.entry, team:mg.team, manager:mg.manager, total: (pts === undefined ? null : pts)};
+    }).filter(function(r){ return r.total !== null; }).sort(function(a,b){ return b.total - a.total; });
+    if(!gwRows.length){
+      gwBestBody.innerHTML = '<div class="empty-state" style="padding:24px 18px;">Belum ada poin GW'+focusEventId+'.</div>';
+    } else {
+      var gwLeader = gwRows[0];
+      var gwRunners = gwRows.slice(1,4);
+      var gwHtml = '<div class="spotlight">'+
+        '<span class="crown-big">⚡</span>'+
+        '<span class="s-team">'+gwLeader.team+'</span>'+
+        '<span class="s-manager">'+gwLeader.manager+'</span>'+
+        '<span class="s-points">'+gwLeader.total+'</span>'+
+        '<span class="s-points-label">Poin GW'+focusEventId+'</span>';
+      if(gwRunners.length){
+        gwHtml += '<div class="runner-ups">';
+        gwRunners.forEach(function(r, idx){
+          gwHtml += '<div class="runner-row"><span>#'+(idx+2)+' <b>'+r.team+'</b></span><span>'+r.total+' pts</span></div>';
+        });
+        gwHtml += '</div>';
+      }
+      gwHtml += '</div>';
+      gwBestBody.innerHTML = gwHtml;
+    }
+  }
+
+  if(showMonthly && defaultKey){
+    /* ---------- highlight card: manager of the month (bulan berjalan) ---------- */
+    var motmMonth = monthsMap[defaultKey];
+    var motmStatus = monthStatus(motmMonth);
+    var motmRows = monthRows(motmMonth);
+    document.getElementById('motm-note').textContent = motmMonth.label + (motmStatus === 'done' ? ' — final' : motmStatus === 'live' ? ' — sementara' : '');
+    var motmBody = document.getElementById('motm-body');
+    if(!motmRows.length){
+      motmBody.innerHTML = '<div class="empty-state" style="padding:24px 18px;">Gameweek bulan ini belum dimainkan.</div>';
+    } else {
+      var motmLeader = motmRows[0];
+      var motmRunners = motmRows.slice(1,4);
+      var motmHtml = '<div class="spotlight">'+
+        '<span class="crown-big">📅</span>'+
+        '<span class="s-team">'+motmLeader.team+'</span>'+
+        '<span class="s-manager">'+motmLeader.manager+'</span>'+
+        '<span class="s-points">'+motmLeader.total+'</span>'+
+        '<span class="s-points-label">Poin Bulan Ini</span>';
+      if(motmRunners.length){
+        motmHtml += '<div class="runner-ups">';
+        motmRunners.forEach(function(r, idx){
+          motmHtml += '<div class="runner-row"><span>#'+(idx+2)+' <b>'+r.team+'</b></span><span>'+r.total+' pts</span></div>';
+        });
+        motmHtml += '</div>';
+      }
+      motmHtml += '</div>';
+      motmBody.innerHTML = motmHtml;
+    }
+  }
+
+  document.getElementById('member-count').textContent = MANAGERS.length + ' manajer';
+  var upd = LEAGUE.lastUpdated ? new Date(LEAGUE.lastUpdated) : null;
+  if(upd){
+    var updStr = upd.toLocaleString('id-ID',{ day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Jakarta'}) + ' WIB';
+    document.getElementById('last-updated').textContent = 'Diperbarui ' + updStr;
+  }
+  document.getElementById('footer-note').textContent = 'Liga: ' + (LEAGUE.name || '-') + ' · Musim ' + (LEAGUE.season || CONFIG.season || '-') + ' · ID ' + (LEAGUE.id || CONFIG.leagueId);
+})();
+</script>
+</body>
+</html>

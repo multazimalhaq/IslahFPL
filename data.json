@@ -1,0 +1,13 @@
+{
+  "league": {
+    "id": 0,
+    "name": "",
+    "season": "",
+    "lastUpdated": null
+  },
+  "events": [],
+  "currentEvent": null,
+  "playedEvents": [],
+  "managers": [],
+  "points": {}
+}
