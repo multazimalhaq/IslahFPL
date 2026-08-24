@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-08-24T13:44:46.493Z"
+    "lastUpdated": "2026-08-24T18:49:47.640Z"
   },
   "events": [
     {
@@ -193,24 +193,24 @@
       "manager": "Shidiq Muhammad"
     },
     {
-      "entry": 134863,
-      "team": "Juru Kunci",
-      "manager": "Sulthan Alkatiri"
-    },
-    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
     },
     {
-      "entry": 720103,
-      "team": "pancongbalap",
-      "manager": "buki bukan"
+      "entry": 134863,
+      "team": "Juru Kunci",
+      "manager": "Sulthan Alkatiri"
     },
     {
       "entry": 238148,
       "team": "Jangan dilihat",
       "manager": "faris azim"
+    },
+    {
+      "entry": 720103,
+      "team": "pancongbalap",
+      "manager": "buki bukan"
     },
     {
       "entry": 1725146,
@@ -248,19 +248,24 @@
       "manager": "Zaidan Izzatulhaq Aljundi"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
-    },
-    {
       "entry": 46579,
       "team": "Summarecon City",
       "manager": "babar bener"
     },
     {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
+    },
+    {
       "entry": 7573068,
       "team": "Antasena FC",
       "manager": "Muhammad Rizqi Az Zayyad"
+    },
+    {
+      "entry": 3661046,
+      "team": "Homingworm",
+      "manager": "H. Islah"
     },
     {
       "entry": 3623791,
@@ -271,11 +276,6 @@
       "entry": 2678390,
       "team": "Aksara",
       "manager": "Nuha F"
-    },
-    {
-      "entry": 3661046,
-      "team": "Homingworm",
-      "manager": "H. Islah"
     },
     {
       "entry": 1845265,
@@ -293,14 +293,14 @@
       "manager": "Muhammad Tsaqif Fikry"
     },
     {
-      "entry": 2463125,
-      "team": "New Coral FC",
-      "manager": "Hanzo GM"
-    },
-    {
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
+    },
+    {
+      "entry": 2463125,
+      "team": "New Coral FC",
+      "manager": "Hanzo GM"
     },
     {
       "entry": 7501986,
@@ -308,14 +308,14 @@
       "manager": "Muhammad Abiyyu Ilyas"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
-    },
-    {
       "entry": 1854266,
       "team": "Hattrick Hotties",
       "manager": "Fatah Ishaq"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
     },
     {
       "entry": 3204276,
