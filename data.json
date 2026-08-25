@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-08-25T01:39:15.794Z"
+    "lastUpdated": "2026-08-25T06:57:35.476Z"
   },
   "events": [
     {
@@ -163,24 +163,24 @@
   "playedEvents": [],
   "managers": [
     {
-      "entry": 238148,
-      "team": "Jangan dilihat",
-      "manager": "faris azim"
-    },
-    {
       "entry": 3257881,
       "team": "Title Rice",
       "manager": "Shidiq Muhammad"
     },
     {
-      "entry": 1725146,
-      "team": "Arkhytekz",
-      "manager": "Muhammad Farihin"
+      "entry": 238148,
+      "team": "Jangan dilihat",
+      "manager": "faris azim"
     },
     {
       "entry": 85270,
       "team": "POWER DANGER FC",
       "manager": "Kas Hartadi"
+    },
+    {
+      "entry": 1725146,
+      "team": "Arkhytekz",
+      "manager": "Muhammad Farihin"
     },
     {
       "entry": 386731,
@@ -193,19 +193,14 @@
       "manager": "Daudi Fathan"
     },
     {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
-    },
-    {
       "entry": 7971869,
       "team": "Pick Me Up",
       "manager": "Hasbi Rifasakti"
     },
     {
-      "entry": 7573068,
-      "team": "Antasena FC",
-      "manager": "Muhammad Rizqi Az Zayyad"
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
     },
     {
       "entry": 134863,
@@ -213,14 +208,14 @@
       "manager": "Sulthan Alkatiri"
     },
     {
+      "entry": 7573068,
+      "team": "Antasena FC",
+      "manager": "Muhammad Rizqi Az Zayyad"
+    },
+    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 7501986,
-      "team": "Goal Diggers",
-      "manager": "Muhammad Abiyyu Ilyas"
     },
     {
       "entry": 720103,
@@ -228,14 +223,14 @@
       "manager": "buki bukan"
     },
     {
+      "entry": 7501986,
+      "team": "Goal Diggers",
+      "manager": "Muhammad Abiyyu Ilyas"
+    },
+    {
       "entry": 1845265,
       "team": "Hiliwir Idrocq",
       "manager": "Agung Maٰruf"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 1838776,
@@ -243,14 +238,19 @@
       "manager": "Aep Muhaemin"
     },
     {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 5126129,
       "team": "Arah Timur",
       "manager": "Faishal Fajari"
+    },
+    {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
     },
     {
       "entry": 4656762,
@@ -263,14 +263,14 @@
       "manager": "Miftah Tegar"
     },
     {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
-    },
-    {
       "entry": 7467749,
       "team": "Bungong Jeumpa",
       "manager": "Arik Muharrik"
+    },
+    {
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
     },
     {
       "entry": 3661046,
@@ -278,9 +278,9 @@
       "manager": "H. Islah"
     },
     {
-      "entry": 5138718,
-      "team": "minaminu’s fc",
-      "manager": "Elsyaif Aminullah"
+      "entry": 117245,
+      "team": "PUNDIDUDEDOT",
+      "manager": "Hanif Kasyfillah"
     },
     {
       "entry": 3052973,
@@ -288,9 +288,9 @@
       "manager": "muammal hamidy"
     },
     {
-      "entry": 117245,
-      "team": "PUNDIDUDEDOT",
-      "manager": "Hanif Kasyfillah"
+      "entry": 5138718,
+      "team": "minaminu’s fc",
+      "manager": "Elsyaif Aminullah"
     },
     {
       "entry": 6797821,
