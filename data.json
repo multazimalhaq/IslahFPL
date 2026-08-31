@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-08-31T13:19:46.525Z"
+    "lastUpdated": "2026-08-31T22:42:39.350Z"
   },
   "events": [
     {
@@ -165,6 +165,11 @@
   ],
   "managers": [
     {
+      "entry": 85270,
+      "team": "POWER DANGER FC",
+      "manager": "Kas Hartadi"
+    },
+    {
       "entry": 134863,
       "team": "Juru Kunci",
       "manager": "Sulthan Alkatiri"
@@ -173,11 +178,6 @@
       "entry": 720103,
       "team": "pancongbalap",
       "manager": "buki bukan"
-    },
-    {
-      "entry": 85270,
-      "team": "POWER DANGER FC",
-      "manager": "Kas Hartadi"
     },
     {
       "entry": 7501986,
@@ -190,21 +190,6 @@
       "manager": "Syahr Ghaffari"
     },
     {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
-    },
-    {
-      "entry": 1838776,
-      "team": "KING EMYU",
-      "manager": "Aep Muhaemin"
-    },
-    {
       "entry": 5126129,
       "team": "Arah Timur",
       "manager": "Faishal Fajari"
@@ -215,39 +200,9 @@
       "manager": "Shiba Inu"
     },
     {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
-    },
-    {
-      "entry": 1845265,
-      "team": "Hiliwir Idrocq",
-      "manager": "Agung Maٰruf"
-    },
-    {
-      "entry": 83181,
-      "team": "FPL Modal Firasat",
-      "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
-    },
-    {
-      "entry": 6194119,
-      "team": "PB Squad",
-      "manager": "sabiq chaerulanam"
-    },
-    {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
-    },
-    {
-      "entry": 4656762,
-      "team": "MAMPRANK FC",
-      "manager": "Zaidan Izzatulhaq Aljundi"
+      "entry": 1838776,
+      "team": "KING EMYU",
+      "manager": "Aep Muhaemin"
     },
     {
       "entry": 4905253,
@@ -255,14 +210,29 @@
       "manager": "Daudi Fathan"
     },
     {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
+      "entry": 83181,
+      "team": "FPL Modal Firasat",
+      "manager": "Hassan Musthafa"
+    },
+    {
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
+    },
+    {
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
+    },
+    {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
     },
     {
       "entry": 6797821,
@@ -270,14 +240,29 @@
       "manager": "Muhammad Tsaqif Fikry"
     },
     {
-      "entry": 3204276,
-      "team": "La Fee Verte FC",
-      "manager": "Akid Abdussalam"
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
     },
     {
-      "entry": 3257881,
-      "team": "Title Rice",
-      "manager": "Shidiq Muhammad"
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
+      "entry": 1845265,
+      "team": "Hiliwir Idrocq",
+      "manager": "Agung Maٰruf"
+    },
+    {
+      "entry": 4656762,
+      "team": "MAMPRANK FC",
+      "manager": "Zaidan Izzatulhaq Aljundi"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
       "entry": 238148,
@@ -285,9 +270,9 @@
       "manager": "faris azim"
     },
     {
-      "entry": 7573068,
-      "team": "Antasena FC",
-      "manager": "Muhammad Rizqi Az Zayyad"
+      "entry": 3257881,
+      "team": "Title Rice",
+      "manager": "Shidiq Muhammad"
     },
     {
       "entry": 3052973,
@@ -295,24 +280,34 @@
       "manager": "muammal hamidy"
     },
     {
-      "entry": 3661046,
-      "team": "Homingworm",
-      "manager": "H. Islah"
-    },
-    {
       "entry": 5138718,
       "team": "minaminu’s fc",
       "manager": "Elsyaif Aminullah"
     },
     {
-      "entry": 1848061,
-      "team": "Sepupu Amorim",
-      "manager": "Aziz Gratama"
+      "entry": 3661046,
+      "team": "Homingworm",
+      "manager": "H. Islah"
     },
     {
-      "entry": 3623417,
-      "team": "Kasreng Beu",
-      "manager": "Syu'bah Ishmatullah"
+      "entry": 6194119,
+      "team": "PB Squad",
+      "manager": "sabiq chaerulanam"
+    },
+    {
+      "entry": 7573068,
+      "team": "Antasena FC",
+      "manager": "Muhammad Rizqi Az Zayyad"
+    },
+    {
+      "entry": 2676652,
+      "team": "Miftah's Team",
+      "manager": "Miftah Tegar"
+    },
+    {
+      "entry": 3204276,
+      "team": "La Fee Verte FC",
+      "manager": "Akid Abdussalam"
     },
     {
       "entry": 117245,
@@ -325,75 +320,80 @@
       "manager": "Nuha F"
     },
     {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
-    },
-    {
-      "entry": 2463125,
-      "team": "New Coral FC",
-      "manager": "Hanzo GM"
-    },
-    {
       "entry": 3623867,
       "team": "Jimboy",
       "manager": "Multazim Alhaq"
     },
     {
-      "entry": 2676652,
-      "team": "Miftah's Team",
-      "manager": "Miftah Tegar"
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
+      "entry": 1848061,
+      "team": "Sepupu Amorim",
+      "manager": "Aziz Gratama"
     },
     {
       "entry": 1725146,
       "team": "Arkhytekz",
       "manager": "Muhammad Farihin"
+    },
+    {
+      "entry": 3623417,
+      "team": "Kasreng Beu",
+      "manager": "Syu'bah Ishmatullah"
+    },
+    {
+      "entry": 2463125,
+      "team": "New Coral FC",
+      "manager": "Hanzo GM"
     }
   ],
   "points": {
     "46579": {
       "1": 52,
-      "2": 74
+      "2": 88
     },
     "83181": {
       "1": 56,
-      "2": 75
+      "2": 92
     },
     "85270": {
       "1": 61,
-      "2": 94
+      "2": 112
     },
     "117245": {
       "1": 46,
-      "2": 59
+      "2": 73
     },
     "134863": {
       "1": 56,
-      "2": 101
+      "2": 114
     },
     "238148": {
       "1": 64,
-      "2": 53
+      "2": 68
     },
     "386731": {
       "1": 60,
-      "2": 94
+      "2": 105
     },
     "715380": {
       "1": 49,
-      "2": 96
+      "2": 99
     },
     "720103": {
       "1": 55,
-      "2": 100
+      "2": 111
     },
     "1725146": {
       "1": 61,
-      "2": 35
+      "2": 47
     },
     "1838776": {
       "1": 54,
-      "2": 90
+      "2": 101
     },
     "1845265": {
       "1": 55,
@@ -401,11 +401,11 @@
     },
     "1848061": {
       "1": 40,
-      "2": 68
+      "2": 72
     },
     "1854266": {
       "1": 43,
-      "2": 100
+      "2": 102
     },
     "2463125": {
       "1": 41,
@@ -413,15 +413,15 @@
     },
     "2676652": {
       "1": 51,
-      "2": 43
+      "2": 71
     },
     "2678390": {
       "1": 58,
-      "2": 46
+      "2": 60
     },
     "3052973": {
       "1": 48,
-      "2": 62
+      "2": 82
     },
     "3204276": {
       "1": 51,
@@ -429,7 +429,7 @@
     },
     "3257881": {
       "1": 63,
-      "2": 58
+      "2": 69
     },
     "3623417": {
       "1": 47,
@@ -437,35 +437,35 @@
     },
     "3623791": {
       "1": 44,
-      "2": 97
+      "2": 114
     },
     "3623867": {
       "1": 32,
-      "2": 68
+      "2": 85
     },
     "3661046": {
       "1": 47,
-      "2": 64
+      "2": 81
     },
     "4656762": {
       "1": 54,
-      "2": 73
+      "2": 81
     },
     "4746517": {
       "1": 55,
-      "2": 77
+      "2": 94
     },
     "4905253": {
       "1": 60,
-      "2": 66
+      "2": 88
     },
     "5126129": {
       "1": 55,
-      "2": 91
+      "2": 109
     },
     "5138718": {
       "1": 47,
-      "2": 64
+      "2": 81
     },
     "6194119": {
       "1": 39,
@@ -473,31 +473,31 @@
     },
     "6797821": {
       "1": 45,
-      "2": 76
+      "2": 96
     },
     "7467749": {
       "1": 50,
-      "2": 74
+      "2": 82
     },
     "7501986": {
       "1": 55,
-      "2": 99
+      "2": 110
     },
     "7560538": {
       "1": 42,
-      "2": 61
+      "2": 73
     },
     "7573068": {
       "1": 57,
-      "2": 61
+      "2": 72
     },
     "7971869": {
       "1": 58,
-      "2": 79
+      "2": 87
     },
     "8477463": {
       "1": 54,
-      "2": 74
+      "2": 85
     }
   }
 }
