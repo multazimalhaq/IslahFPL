@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-01T04:39:14.493Z"
+    "lastUpdated": "2026-09-01T11:28:25.010Z"
   },
   "events": [
     {
@@ -205,14 +205,14 @@
       "manager": "Aep Muhaemin"
     },
     {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
+    },
+    {
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
       "entry": 83181,
@@ -220,24 +220,24 @@
       "manager": "Hassan Musthafa"
     },
     {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
-    },
-    {
       "entry": 7971869,
       "team": "Pick Me Up",
       "manager": "Hasbi Rifasakti"
     },
     {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
-    },
-    {
       "entry": 6797821,
       "team": "SAKIP FC",
       "manager": "Muhammad Tsaqif Fikry"
+    },
+    {
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
+    },
+    {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
     },
     {
       "entry": 46579,
@@ -290,6 +290,11 @@
       "manager": "H. Islah"
     },
     {
+      "entry": 2676652,
+      "team": "Miftah's Team",
+      "manager": "Miftah Tegar"
+    },
+    {
       "entry": 6194119,
       "team": "PB Squad",
       "manager": "sabiq chaerulanam"
@@ -298,11 +303,6 @@
       "entry": 7573068,
       "team": "Antasena FC",
       "manager": "Muhammad Rizqi Az Zayyad"
-    },
-    {
-      "entry": 2676652,
-      "team": "Miftah's Team",
-      "manager": "Miftah Tegar"
     },
     {
       "entry": 117245,
@@ -315,14 +315,14 @@
       "manager": "Akid Abdussalam"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
-    },
-    {
       "entry": 2678390,
       "team": "Aksara",
       "manager": "Nuha F"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
     },
     {
       "entry": 7560538,
@@ -353,7 +353,7 @@
   "points": {
     "46579": {
       "1": 52,
-      "2": 88
+      "2": 91
     },
     "83181": {
       "1": 56,
@@ -365,7 +365,7 @@
     },
     "117245": {
       "1": 46,
-      "2": 73
+      "2": 76
     },
     "134863": {
       "1": 56,
@@ -397,7 +397,7 @@
     },
     "1845265": {
       "1": 55,
-      "2": 81
+      "2": 83
     },
     "1848061": {
       "1": 40,
@@ -409,31 +409,31 @@
     },
     "2463125": {
       "1": 41,
-      "2": 64
+      "2": 70
     },
     "2676652": {
       "1": 51,
-      "2": 71
+      "2": 77
     },
     "2678390": {
       "1": 58,
-      "2": 60
+      "2": 61
     },
     "3052973": {
       "1": 48,
-      "2": 82
+      "2": 84
     },
     "3204276": {
       "1": 51,
-      "2": 70
+      "2": 71
     },
     "3257881": {
       "1": 63,
-      "2": 69
+      "2": 71
     },
     "3623417": {
       "1": 47,
-      "2": 59
+      "2": 60
     },
     "3623791": {
       "1": 44,
@@ -441,7 +441,7 @@
     },
     "3623867": {
       "1": 32,
-      "2": 85
+      "2": 87
     },
     "3661046": {
       "1": 47,
@@ -465,7 +465,7 @@
     },
     "5138718": {
       "1": 47,
-      "2": 81
+      "2": 83
     },
     "6194119": {
       "1": 39,
@@ -473,7 +473,7 @@
     },
     "6797821": {
       "1": 45,
-      "2": 96
+      "2": 100
     },
     "7467749": {
       "1": 50,
@@ -493,7 +493,7 @@
     },
     "7971869": {
       "1": 58,
-      "2": 87
+      "2": 89
     },
     "8477463": {
       "1": 54,
