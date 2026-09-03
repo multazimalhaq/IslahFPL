@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-03T16:13:45.589Z"
+    "lastUpdated": "2026-09-03T20:51:26.249Z"
   },
   "events": [
     {
@@ -271,14 +271,14 @@
       "manager": "Arik Muharrik"
     },
     {
-      "entry": 3052973,
-      "team": "siammal",
-      "manager": "muammal hamidy"
-    },
-    {
       "entry": 238148,
       "team": "Jangan dilihat",
       "manager": "faris azim"
+    },
+    {
+      "entry": 3052973,
+      "team": "siammal",
+      "manager": "muammal hamidy"
     },
     {
       "entry": 5138718,
@@ -286,14 +286,14 @@
       "manager": "Elsyaif Aminullah"
     },
     {
-      "entry": 2676652,
-      "team": "Miftah's Team",
-      "manager": "Miftah Tegar"
-    },
-    {
       "entry": 3661046,
       "team": "Homingworm",
       "manager": "H. Islah"
+    },
+    {
+      "entry": 2676652,
+      "team": "Miftah's Team",
+      "manager": "Miftah Tegar"
     },
     {
       "entry": 6194119,
@@ -316,14 +316,14 @@
       "manager": "Akid Abdussalam"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
-    },
-    {
       "entry": 2678390,
       "team": "Aksara",
       "manager": "Nuha F"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
     },
     {
       "entry": 7560538,
