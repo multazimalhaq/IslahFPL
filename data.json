@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-04T16:08:35.073Z"
+    "lastUpdated": "2026-09-04T20:38:17.428Z"
   },
   "events": [
     {
@@ -159,7 +159,7 @@
       "deadline": "2027-05-30T13:30:00Z"
     }
   ],
-  "currentEvent": 2,
+  "currentEvent": 3,
   "playedEvents": [
     1,
     2
@@ -171,19 +171,9 @@
       "manager": "Kas Hartadi"
     },
     {
-      "entry": 134863,
-      "team": "Juru Kunci",
-      "manager": "Sulthan Alkatiri"
-    },
-    {
       "entry": 720103,
       "team": "pancongbalap",
       "manager": "buki bukan"
-    },
-    {
-      "entry": 7501986,
-      "team": "Goal Diggers",
-      "manager": "Muhammad Abiyyu Ilyas"
     },
     {
       "entry": 386731,
@@ -191,24 +181,24 @@
       "manager": "Syahr Ghaffari"
     },
     {
-      "entry": 5126129,
-      "team": "Arah Timur",
-      "manager": "Faishal Fajari"
-    },
-    {
-      "entry": 3623791,
-      "team": "Metropolitan United",
-      "manager": "Shiba Inu"
-    },
-    {
-      "entry": 1838776,
-      "team": "KING EMYU",
-      "manager": "Aep Muhaemin"
-    },
-    {
       "entry": 715380,
       "team": "Army of the Pitch",
       "manager": "Miftah Faridl"
+    },
+    {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
+      "entry": 134863,
+      "team": "Juru Kunci",
+      "manager": "Sulthan Alkatiri"
+    },
+    {
+      "entry": 7501986,
+      "team": "Goal Diggers",
+      "manager": "Muhammad Abiyyu Ilyas"
     },
     {
       "entry": 4905253,
@@ -216,14 +206,14 @@
       "manager": "Daudi Fathan"
     },
     {
-      "entry": 83181,
-      "team": "FPL Modal Firasat",
-      "manager": "Hassan Musthafa"
+      "entry": 1838776,
+      "team": "KING EMYU",
+      "manager": "Aep Muhaemin"
     },
     {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
+      "entry": 3623791,
+      "team": "Metropolitan United",
+      "manager": "Shiba Inu"
     },
     {
       "entry": 1854266,
@@ -231,9 +221,19 @@
       "manager": "Fatah Ishaq"
     },
     {
-      "entry": 6797821,
-      "team": "SAKIP FC",
-      "manager": "Muhammad Tsaqif Fikry"
+      "entry": 5126129,
+      "team": "Arah Timur",
+      "manager": "Faishal Fajari"
+    },
+    {
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
+    },
+    {
+      "entry": 83181,
+      "team": "FPL Modal Firasat",
+      "manager": "Hassan Musthafa"
     },
     {
       "entry": 4746517,
@@ -246,14 +246,24 @@
       "manager": "babar bener"
     },
     {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
-    },
-    {
       "entry": 1845265,
       "team": "Hiliwir Idrocq",
       "manager": "Agung Maٰruf"
+    },
+    {
+      "entry": 6797821,
+      "team": "SAKIP FC",
+      "manager": "Muhammad Tsaqif Fikry"
+    },
+    {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
       "entry": 4656762,
@@ -266,9 +276,9 @@
       "manager": "Shidiq Muhammad"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
+      "entry": 238148,
+      "team": "Jangan dilihat",
+      "manager": "faris azim"
     },
     {
       "entry": 3052973,
@@ -276,14 +286,19 @@
       "manager": "muammal hamidy"
     },
     {
-      "entry": 238148,
-      "team": "Jangan dilihat",
-      "manager": "faris azim"
+      "entry": 6194119,
+      "team": "PB Squad",
+      "manager": "sabiq chaerulanam"
     },
     {
-      "entry": 5138718,
-      "team": "minaminu’s fc",
-      "manager": "Elsyaif Aminullah"
+      "entry": 3623417,
+      "team": "Kasreng Beu",
+      "manager": "Syu'bah Ishmatullah"
+    },
+    {
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
     },
     {
       "entry": 3661046,
@@ -296,19 +311,14 @@
       "manager": "Miftah Tegar"
     },
     {
-      "entry": 6194119,
-      "team": "PB Squad",
-      "manager": "sabiq chaerulanam"
-    },
-    {
       "entry": 7573068,
       "team": "Antasena FC",
       "manager": "Muhammad Rizqi Az Zayyad"
     },
     {
-      "entry": 117245,
-      "team": "PUNDIDUDEDOT",
-      "manager": "Hanif Kasyfillah"
+      "entry": 2463125,
+      "team": "New Coral FC",
+      "manager": "Hanzo GM"
     },
     {
       "entry": 3204276,
@@ -316,19 +326,19 @@
       "manager": "Akid Abdussalam"
     },
     {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
+      "entry": 117245,
+      "team": "PUNDIDUDEDOT",
+      "manager": "Hanif Kasyfillah"
+    },
+    {
+      "entry": 5138718,
+      "team": "minaminu’s fc",
+      "manager": "Elsyaif Aminullah"
     },
     {
       "entry": 3623867,
       "team": "Jimboy",
       "manager": "Multazim Alhaq"
-    },
-    {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
     },
     {
       "entry": 1848061,
@@ -341,164 +351,199 @@
       "manager": "Muhammad Farihin"
     },
     {
-      "entry": 3623417,
-      "team": "Kasreng Beu",
-      "manager": "Syu'bah Ishmatullah"
-    },
-    {
-      "entry": 2463125,
-      "team": "New Coral FC",
-      "manager": "Hanzo GM"
+      "entry": 10265003,
+      "team": "Rough FC",
+      "manager": "Mirza Mirza"
     }
   ],
   "points": {
     "46579": {
       "1": 52,
-      "2": 91
+      "2": 91,
+      "3": 0
     },
     "83181": {
       "1": 56,
-      "2": 92
+      "2": 92,
+      "3": 0
     },
     "85270": {
       "1": 61,
-      "2": 112
+      "2": 112,
+      "3": 0
     },
     "117245": {
       "1": 46,
-      "2": 76
+      "2": 76,
+      "3": 0
     },
     "134863": {
       "1": 56,
-      "2": 114
+      "2": 114,
+      "3": 0
     },
     "238148": {
       "1": 64,
-      "2": 68
+      "2": 68,
+      "3": 0
     },
     "386731": {
       "1": 60,
-      "2": 105
+      "2": 105,
+      "3": 0
     },
     "715380": {
       "1": 49,
-      "2": 99
+      "2": 99,
+      "3": 0
     },
     "720103": {
       "1": 55,
-      "2": 111
+      "2": 111,
+      "3": 0
     },
     "1725146": {
       "1": 61,
-      "2": 47
+      "2": 47,
+      "3": 0
     },
     "1838776": {
       "1": 54,
-      "2": 101
+      "2": 101,
+      "3": 0
     },
     "1845265": {
       "1": 55,
-      "2": 83
+      "2": 83,
+      "3": 0
     },
     "1848061": {
       "1": 40,
-      "2": 72
+      "2": 72,
+      "3": 0
     },
     "1854266": {
       "1": 43,
-      "2": 102
+      "2": 102,
+      "3": 0
     },
     "2463125": {
       "1": 41,
-      "2": 70
+      "2": 70,
+      "3": 0
     },
     "2676652": {
       "1": 51,
-      "2": 77
+      "2": 77,
+      "3": 0
     },
     "2678390": {
       "1": 58,
-      "2": 61
+      "2": 61,
+      "3": 0
     },
     "3052973": {
       "1": 48,
-      "2": 84
+      "2": 84,
+      "3": 0
     },
     "3204276": {
       "1": 51,
-      "2": 71
+      "2": 71,
+      "3": 0
     },
     "3257881": {
       "1": 63,
-      "2": 71
+      "2": 71,
+      "3": 0
     },
     "3623417": {
       "1": 47,
-      "2": 60
+      "2": 60,
+      "3": 0
     },
     "3623791": {
       "1": 44,
-      "2": 114
+      "2": 114,
+      "3": 0
     },
     "3623867": {
       "1": 32,
-      "2": 87
+      "2": 87,
+      "3": 0
     },
     "3661046": {
       "1": 47,
-      "2": 81
+      "2": 81,
+      "3": 0
     },
     "4656762": {
       "1": 54,
-      "2": 81
+      "2": 81,
+      "3": 0
     },
     "4746517": {
       "1": 55,
-      "2": 94
+      "2": 94,
+      "3": 0
     },
     "4905253": {
       "1": 60,
-      "2": 88
+      "2": 88,
+      "3": 0
     },
     "5126129": {
       "1": 55,
-      "2": 109
+      "2": 109,
+      "3": 0
     },
     "5138718": {
       "1": 47,
-      "2": 83
+      "2": 83,
+      "3": 0
     },
     "6194119": {
       "1": 39,
-      "2": 93
+      "2": 93,
+      "3": 0
     },
     "6797821": {
       "1": 45,
-      "2": 100
+      "2": 100,
+      "3": 0
     },
     "7467749": {
       "1": 50,
-      "2": 82
+      "2": 82,
+      "3": 0
     },
     "7501986": {
       "1": 55,
-      "2": 110
+      "2": 110,
+      "3": 0
     },
     "7560538": {
       "1": 42,
-      "2": 73
+      "2": 73,
+      "3": 0
     },
     "7573068": {
       "1": 57,
-      "2": 72
+      "2": 72,
+      "3": 0
     },
     "7971869": {
       "1": 58,
-      "2": 89
+      "2": 89,
+      "3": 0
     },
     "8477463": {
       "1": 54,
-      "2": 85
+      "2": 85,
+      "3": 0
+    },
+    "10265003": {
+      "3": 0
     }
   }
 }
