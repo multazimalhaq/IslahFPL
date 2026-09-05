@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-05T10:23:08.912Z"
+    "lastUpdated": "2026-09-05T14:57:31.070Z"
   },
   "events": [
     {
@@ -171,19 +171,14 @@
       "manager": "Kas Hartadi"
     },
     {
-      "entry": 720103,
-      "team": "pancongbalap",
-      "manager": "buki bukan"
-    },
-    {
       "entry": 386731,
       "team": "Anxious Saturday",
       "manager": "Syahr Ghaffari"
     },
     {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
+      "entry": 720103,
+      "team": "pancongbalap",
+      "manager": "buki bukan"
     },
     {
       "entry": 715380,
@@ -191,19 +186,14 @@
       "manager": "Miftah Faridl"
     },
     {
-      "entry": 134863,
-      "team": "Juru Kunci",
-      "manager": "Sulthan Alkatiri"
-    },
-    {
       "entry": 7501986,
       "team": "Goal Diggers",
       "manager": "Muhammad Abiyyu Ilyas"
     },
     {
-      "entry": 4905253,
-      "team": "LT squad",
-      "manager": "Daudi Fathan"
+      "entry": 134863,
+      "team": "Juru Kunci",
+      "manager": "Sulthan Alkatiri"
     },
     {
       "entry": 1838776,
@@ -216,19 +206,14 @@
       "manager": "Shiba Inu"
     },
     {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
-    },
-    {
       "entry": 5126129,
       "team": "Arah Timur",
       "manager": "Faishal Fajari"
     },
     {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
     },
     {
       "entry": 83181,
@@ -236,14 +221,14 @@
       "manager": "Hassan Musthafa"
     },
     {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
       "entry": 4746517,
       "team": "kadalnyungsep",
       "manager": "Salman Syihabul"
-    },
-    {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
     },
     {
       "entry": 1845265,
@@ -251,9 +236,24 @@
       "manager": "Agung Maٰruf"
     },
     {
-      "entry": 6797821,
-      "team": "SAKIP FC",
-      "manager": "Muhammad Tsaqif Fikry"
+      "entry": 4656762,
+      "team": "MAMPRANK FC",
+      "manager": "Zaidan Izzatulhaq Aljundi"
+    },
+    {
+      "entry": 4905253,
+      "team": "LT squad",
+      "manager": "Daudi Fathan"
+    },
+    {
+      "entry": 3661046,
+      "team": "Homingworm",
+      "manager": "H. Islah"
+    },
+    {
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
     },
     {
       "entry": 7560538,
@@ -261,19 +261,29 @@
       "manager": "Fathurrohman Hammam"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
+      "entry": 6797821,
+      "team": "SAKIP FC",
+      "manager": "Muhammad Tsaqif Fikry"
     },
     {
-      "entry": 4656762,
-      "team": "MAMPRANK FC",
-      "manager": "Zaidan Izzatulhaq Aljundi"
+      "entry": 2676652,
+      "team": "Miftah's Team",
+      "manager": "Miftah Tegar"
     },
     {
-      "entry": 6194119,
-      "team": "PB Squad",
-      "manager": "sabiq chaerulanam"
+      "entry": 3052973,
+      "team": "siammal",
+      "manager": "muammal hamidy"
+    },
+    {
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
+    },
+    {
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
     },
     {
       "entry": 3257881,
@@ -286,29 +296,9 @@
       "manager": "faris azim"
     },
     {
-      "entry": 3052973,
-      "team": "siammal",
-      "manager": "muammal hamidy"
-    },
-    {
-      "entry": 3623417,
-      "team": "Kasreng Beu",
-      "manager": "Syu'bah Ishmatullah"
-    },
-    {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
-    },
-    {
-      "entry": 3661046,
-      "team": "Homingworm",
-      "manager": "H. Islah"
-    },
-    {
-      "entry": 2676652,
-      "team": "Miftah's Team",
-      "manager": "Miftah Tegar"
+      "entry": 5138718,
+      "team": "minaminu’s fc",
+      "manager": "Elsyaif Aminullah"
     },
     {
       "entry": 7573068,
@@ -326,19 +316,29 @@
       "manager": "Akid Abdussalam"
     },
     {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
+    },
+    {
+      "entry": 6194119,
+      "team": "PB Squad",
+      "manager": "sabiq chaerulanam"
+    },
+    {
       "entry": 117245,
       "team": "PUNDIDUDEDOT",
       "manager": "Hanif Kasyfillah"
     },
     {
-      "entry": 5138718,
-      "team": "minaminu’s fc",
-      "manager": "Elsyaif Aminullah"
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
+      "entry": 3623417,
+      "team": "Kasreng Beu",
+      "manager": "Syu'bah Ishmatullah"
     },
     {
       "entry": 1848061,
