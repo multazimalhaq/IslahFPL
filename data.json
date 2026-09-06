@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-06T04:05:56.026Z"
+    "lastUpdated": "2026-09-06T10:42:09.579Z"
   },
   "events": [
     {
@@ -256,6 +256,11 @@
       "manager": "babar bener"
     },
     {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
       "entry": 7971869,
       "team": "Pick Me Up",
       "manager": "Hasbi Rifasakti"
@@ -264,11 +269,6 @@
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
-    },
-    {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
     },
     {
       "entry": 3257881,
@@ -296,14 +296,14 @@
       "manager": "Miftah Tegar"
     },
     {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
-    },
-    {
       "entry": 238148,
       "team": "Jangan dilihat",
       "manager": "faris azim"
+    },
+    {
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
     },
     {
       "entry": 3623867,
@@ -336,14 +336,14 @@
       "manager": "Arik Muharrik"
     },
     {
-      "entry": 1848061,
-      "team": "Sepupu Amorim",
-      "manager": "Aziz Gratama"
-    },
-    {
       "entry": 117245,
       "team": "PUNDIDUDEDOT",
       "manager": "Hanif Kasyfillah"
+    },
+    {
+      "entry": 1848061,
+      "team": "Sepupu Amorim",
+      "manager": "Aziz Gratama"
     },
     {
       "entry": 1725146,
