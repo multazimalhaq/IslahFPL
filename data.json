@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-06T10:42:09.579Z"
+    "lastUpdated": "2026-09-06T15:18:02.487Z"
   },
   "events": [
     {
@@ -186,6 +186,11 @@
       "manager": "Miftah Faridl"
     },
     {
+      "entry": 3623791,
+      "team": "Metropolitan United",
+      "manager": "Shiba Inu"
+    },
+    {
       "entry": 7501986,
       "team": "Goal Diggers",
       "manager": "Muhammad Abiyyu Ilyas"
@@ -201,19 +206,19 @@
       "manager": "Aep Muhaemin"
     },
     {
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
+    },
+    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
     },
     {
-      "entry": 3623791,
-      "team": "Metropolitan United",
-      "manager": "Shiba Inu"
-    },
-    {
-      "entry": 4656762,
-      "team": "MAMPRANK FC",
-      "manager": "Zaidan Izzatulhaq Aljundi"
+      "entry": 1845265,
+      "team": "Hiliwir Idrocq",
+      "manager": "Agung Maٰruf"
     },
     {
       "entry": 5126129,
@@ -221,9 +226,24 @@
       "manager": "Faishal Fajari"
     },
     {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
+      "entry": 4905253,
+      "team": "LT squad",
+      "manager": "Daudi Fathan"
+    },
+    {
+      "entry": 4656762,
+      "team": "MAMPRANK FC",
+      "manager": "Zaidan Izzatulhaq Aljundi"
+    },
+    {
+      "entry": 6797821,
+      "team": "SAKIP FC",
+      "manager": "Muhammad Tsaqif Fikry"
+    },
+    {
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
     },
     {
       "entry": 4746517,
@@ -231,9 +251,24 @@
       "manager": "Salman Syihabul"
     },
     {
-      "entry": 1845265,
-      "team": "Hiliwir Idrocq",
-      "manager": "Agung Maٰruf"
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
+      "entry": 3257881,
+      "team": "Title Rice",
+      "manager": "Shidiq Muhammad"
+    },
+    {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
     },
     {
       "entry": 7573068,
@@ -246,41 +281,6 @@
       "manager": "H. Islah"
     },
     {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
-    },
-    {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
-    },
-    {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
-    },
-    {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
-    },
-    {
-      "entry": 4905253,
-      "team": "LT squad",
-      "manager": "Daudi Fathan"
-    },
-    {
-      "entry": 3257881,
-      "team": "Title Rice",
-      "manager": "Shidiq Muhammad"
-    },
-    {
-      "entry": 6797821,
-      "team": "SAKIP FC",
-      "manager": "Muhammad Tsaqif Fikry"
-    },
-    {
       "entry": 2463125,
       "team": "New Coral FC",
       "manager": "Hanzo GM"
@@ -289,6 +289,11 @@
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
     },
     {
       "entry": 2676652,
@@ -306,14 +311,19 @@
       "manager": "Nuha F"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
+      "entry": 1848061,
+      "team": "Sepupu Amorim",
+      "manager": "Aziz Gratama"
     },
     {
       "entry": 3623417,
       "team": "Kasreng Beu",
       "manager": "Syu'bah Ishmatullah"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
       "entry": 3204276,
@@ -331,19 +341,9 @@
       "manager": "sabiq chaerulanam"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
-    },
-    {
       "entry": 117245,
       "team": "PUNDIDUDEDOT",
       "manager": "Hanif Kasyfillah"
-    },
-    {
-      "entry": 1848061,
-      "team": "Sepupu Amorim",
-      "manager": "Aziz Gratama"
     },
     {
       "entry": 1725146,
