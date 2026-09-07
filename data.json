@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-07T12:09:39.976Z"
+    "lastUpdated": "2026-09-07T21:23:32.598Z"
   },
   "events": [
     {
@@ -162,7 +162,8 @@
   "currentEvent": 3,
   "playedEvents": [
     1,
-    2
+    2,
+    3
   ],
   "managers": [
     {
