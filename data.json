@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-12T10:29:05.690Z"
+    "lastUpdated": "2026-09-12T15:22:43.862Z"
   },
   "events": [
     {
@@ -159,7 +159,7 @@
       "deadline": "2027-05-30T13:30:00Z"
     }
   ],
-  "currentEvent": 3,
+  "currentEvent": 4,
   "playedEvents": [
     1,
     2,
@@ -172,14 +172,14 @@
       "manager": "Kas Hartadi"
     },
     {
-      "entry": 720103,
-      "team": "pancongbalap",
-      "manager": "buki bukan"
-    },
-    {
       "entry": 386731,
       "team": "Anxious Saturday",
       "manager": "Syahr Ghaffari"
+    },
+    {
+      "entry": 720103,
+      "team": "pancongbalap",
+      "manager": "buki bukan"
     },
     {
       "entry": 134863,
@@ -187,34 +187,9 @@
       "manager": "Sulthan Alkatiri"
     },
     {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
       "entry": 3623791,
       "team": "Metropolitan United",
       "manager": "Shiba Inu"
-    },
-    {
-      "entry": 7501986,
-      "team": "Goal Diggers",
-      "manager": "Muhammad Abiyyu Ilyas"
-    },
-    {
-      "entry": 4905253,
-      "team": "LT squad",
-      "manager": "Daudi Fathan"
-    },
-    {
-      "entry": 1845265,
-      "team": "Hiliwir Idrocq",
-      "manager": "Agung Maٰruf"
-    },
-    {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
     },
     {
       "entry": 1838776,
@@ -227,59 +202,19 @@
       "manager": "babar bener"
     },
     {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
+      "entry": 1845265,
+      "team": "Hiliwir Idrocq",
+      "manager": "Agung Maٰruf"
     },
     {
-      "entry": 5126129,
-      "team": "Arah Timur",
-      "manager": "Faishal Fajari"
+      "entry": 4905253,
+      "team": "LT squad",
+      "manager": "Daudi Fathan"
     },
     {
-      "entry": 83181,
-      "team": "FPL Modal Firasat",
-      "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 6797821,
-      "team": "SAKIP FC",
-      "manager": "Muhammad Tsaqif Fikry"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
-    },
-    {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
-    },
-    {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
-    },
-    {
-      "entry": 7573068,
-      "team": "Antasena FC",
-      "manager": "Muhammad Rizqi Az Zayyad"
-    },
-    {
-      "entry": 4656762,
-      "team": "MAMPRANK FC",
-      "manager": "Zaidan Izzatulhaq Aljundi"
-    },
-    {
-      "entry": 3257881,
-      "team": "Title Rice",
-      "manager": "Shidiq Muhammad"
-    },
-    {
-      "entry": 3052973,
-      "team": "siammal",
-      "manager": "muammal hamidy"
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
       "entry": 3661046,
@@ -287,9 +222,59 @@
       "manager": "H. Islah"
     },
     {
+      "entry": 7573068,
+      "team": "Antasena FC",
+      "manager": "Muhammad Rizqi Az Zayyad"
+    },
+    {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
+      "entry": 4656762,
+      "team": "MAMPRANK FC",
+      "manager": "Zaidan Izzatulhaq Aljundi"
+    },
+    {
+      "entry": 7501986,
+      "team": "Goal Diggers",
+      "manager": "Muhammad Abiyyu Ilyas"
+    },
+    {
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
+    },
+    {
+      "entry": 5126129,
+      "team": "Arah Timur",
+      "manager": "Faishal Fajari"
+    },
+    {
       "entry": 1848061,
       "team": "Sepupu Amorim",
       "manager": "Aziz Gratama"
+    },
+    {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
+    },
+    {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
+      "entry": 3257881,
+      "team": "Title Rice",
+      "manager": "Shidiq Muhammad"
+    },
+    {
+      "entry": 83181,
+      "team": "FPL Modal Firasat",
+      "manager": "Hassan Musthafa"
     },
     {
       "entry": 2678390,
@@ -297,9 +282,39 @@
       "manager": "Nuha F"
     },
     {
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
+    },
+    {
+      "entry": 6797821,
+      "team": "SAKIP FC",
+      "manager": "Muhammad Tsaqif Fikry"
+    },
+    {
+      "entry": 117245,
+      "team": "PUNDIDUDEDOT",
+      "manager": "Hanif Kasyfillah"
+    },
+    {
+      "entry": 2463125,
+      "team": "New Coral FC",
+      "manager": "Hanzo GM"
+    },
+    {
       "entry": 5138718,
       "team": "minaminu’s fc",
       "manager": "Elsyaif Aminullah"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
+    },
+    {
+      "entry": 3052973,
+      "team": "siammal",
+      "manager": "muammal hamidy"
     },
     {
       "entry": 2676652,
@@ -312,31 +327,6 @@
       "manager": "faris azim"
     },
     {
-      "entry": 2463125,
-      "team": "New Coral FC",
-      "manager": "Hanzo GM"
-    },
-    {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
-    },
-    {
-      "entry": 117245,
-      "team": "PUNDIDUDEDOT",
-      "manager": "Hanif Kasyfillah"
-    },
-    {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
-    },
-    {
-      "entry": 3204276,
-      "team": "La Fee Verte FC",
-      "manager": "Akid Abdussalam"
-    },
-    {
       "entry": 3623417,
       "team": "Kasreng Beu",
       "manager": "Syu'bah Ishmatullah"
@@ -347,9 +337,19 @@
       "manager": "sabiq chaerulanam"
     },
     {
+      "entry": 3204276,
+      "team": "La Fee Verte FC",
+      "manager": "Akid Abdussalam"
+    },
+    {
       "entry": 1725146,
       "team": "Arkhytekz",
       "manager": "Muhammad Farihin"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
     },
     {
       "entry": 10265003,
@@ -361,190 +361,228 @@
     "46579": {
       "1": 52,
       "2": 91,
-      "3": 52
+      "3": 52,
+      "4": 0
     },
     "83181": {
       "1": 56,
       "2": 92,
-      "3": 40
+      "3": 40,
+      "4": 0
     },
     "85270": {
       "1": 61,
       "2": 112,
-      "3": 53
+      "3": 53,
+      "4": 0
     },
     "117245": {
       "1": 46,
       "2": 76,
-      "3": 46
+      "3": 46,
+      "4": 0
     },
     "134863": {
       "1": 56,
       "2": 114,
-      "3": 40
+      "3": 40,
+      "4": 0
     },
     "238148": {
       "1": 64,
       "2": 68,
-      "3": 39
+      "3": 39,
+      "4": 0
     },
     "386731": {
       "1": 60,
       "2": 105,
-      "3": 52
+      "3": 52,
+      "4": 0
     },
     "715380": {
       "1": 49,
       "2": 99,
-      "3": 55
+      "3": 55,
+      "4": 0
     },
     "720103": {
       "1": 55,
       "2": 111,
-      "3": 58
+      "3": 58,
+      "4": 0
     },
     "1725146": {
       "1": 61,
       "2": 47,
-      "3": 48
+      "3": 48,
+      "4": 0
     },
     "1838776": {
       "1": 54,
       "2": 101,
-      "3": 36
+      "3": 36,
+      "4": 0
     },
     "1845265": {
       "1": 55,
       "2": 83,
-      "3": 55
+      "3": 55,
+      "4": 0
     },
     "1848061": {
       "1": 40,
       "2": 72,
-      "3": 64
+      "3": 64,
+      "4": 0
     },
     "1854266": {
       "1": 43,
       "2": 102,
-      "3": 47
+      "3": 47,
+      "4": 0
     },
     "2463125": {
       "1": 41,
       "2": 70,
-      "3": 64
+      "3": 64,
+      "4": 0
     },
     "2676652": {
       "1": 51,
       "2": 77,
-      "3": 44
+      "3": 44,
+      "4": 0
     },
     "2678390": {
       "1": 58,
       "2": 61,
-      "3": 56
+      "3": 56,
+      "4": 0
     },
     "3052973": {
       "1": 48,
       "2": 84,
-      "3": 47
+      "3": 47,
+      "4": 0
     },
     "3204276": {
       "1": 51,
       "2": 71,
-      "3": 41
+      "3": 41,
+      "4": 0
     },
     "3257881": {
       "1": 63,
       "2": 71,
-      "3": 53
+      "3": 53,
+      "4": 0
     },
     "3623417": {
       "1": 47,
       "2": 60,
-      "3": 54
+      "3": 54,
+      "4": 0
     },
     "3623791": {
       "1": 44,
       "2": 114,
-      "3": 45
+      "3": 45,
+      "4": 0
     },
     "3623867": {
       "1": 32,
       "2": 87,
-      "3": 45
+      "3": 45,
+      "4": 0
     },
     "3661046": {
       "1": 47,
       "2": 81,
-      "3": 61
+      "3": 61,
+      "4": 0
     },
     "4656762": {
       "1": 54,
       "2": 81,
-      "3": 48
+      "3": 48,
+      "4": 0
     },
     "4746517": {
       "1": 55,
       "2": 94,
-      "3": 39
+      "3": 39,
+      "4": 0
     },
     "4905253": {
       "1": 60,
       "2": 88,
-      "3": 51
+      "3": 51,
+      "4": 0
     },
     "5126129": {
       "1": 55,
       "2": 109,
-      "3": 37
+      "3": 37,
+      "4": 0
     },
     "5138718": {
       "1": 47,
       "2": 83,
-      "3": 51
+      "3": 51,
+      "4": 0
     },
     "6194119": {
       "1": 39,
       "2": 93,
-      "3": 29
+      "3": 29,
+      "4": 0
     },
     "6797821": {
       "1": 45,
       "2": 100,
-      "3": 49
+      "3": 49,
+      "4": 0
     },
     "7467749": {
       "1": 50,
       "2": 82,
-      "3": 36
+      "3": 36,
+      "4": 0
     },
     "7501986": {
       "1": 55,
       "2": 110,
-      "3": 35
+      "3": 35,
+      "4": 0
     },
     "7560538": {
       "1": 42,
       "2": 73,
-      "3": 75
+      "3": 75,
+      "4": 0
     },
     "7573068": {
       "1": 57,
       "2": 72,
-      "3": 59
+      "3": 59,
+      "4": 0
     },
     "7971869": {
       "1": 58,
       "2": 89,
-      "3": 37
+      "3": 37,
+      "4": 0
     },
     "8477463": {
       "1": 54,
       "2": 85,
-      "3": 46
+      "3": 46,
+      "4": 0
     },
     "10265003": {
-      "3": 32
+      "3": 32,
+      "4": 0
     }
   }
 }
