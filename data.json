@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-13T04:21:28.793Z"
+    "lastUpdated": "2026-09-13T11:31:59.731Z"
   },
   "events": [
     {
@@ -272,14 +272,14 @@
       "manager": "Faishal Fajari"
     },
     {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
       "entry": 2676652,
       "team": "Miftah's Team",
       "manager": "Miftah Tegar"
+    },
+    {
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
       "entry": 3052973,
