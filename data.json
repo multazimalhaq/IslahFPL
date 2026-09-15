@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-15T04:28:23.982Z"
+    "lastUpdated": "2026-09-15T11:30:35.942Z"
   },
   "events": [
     {
@@ -187,14 +187,14 @@
       "manager": "buki bukan"
     },
     {
-      "entry": 7501986,
-      "team": "Goal Diggers",
-      "manager": "Muhammad Abiyyu Ilyas"
-    },
-    {
       "entry": 7573068,
       "team": "Antasena FC",
       "manager": "Muhammad Rizqi Az Zayyad"
+    },
+    {
+      "entry": 7501986,
+      "team": "Goal Diggers",
+      "manager": "Muhammad Abiyyu Ilyas"
     },
     {
       "entry": 5138718,
@@ -212,6 +212,11 @@
       "manager": "Fatah Ishaq"
     },
     {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
+    },
+    {
       "entry": 46579,
       "team": "Summarecon City",
       "manager": "babar bener"
@@ -220,11 +225,6 @@
       "entry": 3623791,
       "team": "Metropolitan United",
       "manager": "Shiba Inu"
-    },
-    {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
     },
     {
       "entry": 7971869,
@@ -242,19 +242,14 @@
       "manager": "Shidiq Muhammad"
     },
     {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
-    },
-    {
       "entry": 1845265,
       "team": "Hiliwir Idrocq",
       "manager": "Agung Maٰruf"
     },
     {
-      "entry": 238148,
-      "team": "Jangan dilihat",
-      "manager": "faris azim"
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
     },
     {
       "entry": 4656762,
@@ -262,14 +257,14 @@
       "manager": "Zaidan Izzatulhaq Aljundi"
     },
     {
+      "entry": 238148,
+      "team": "Jangan dilihat",
+      "manager": "faris azim"
+    },
+    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 3204276,
-      "team": "La Fee Verte FC",
-      "manager": "Akid Abdussalam"
     },
     {
       "entry": 715380,
@@ -277,19 +272,29 @@
       "manager": "Miftah Faridl"
     },
     {
+      "entry": 3204276,
+      "team": "La Fee Verte FC",
+      "manager": "Akid Abdussalam"
+    },
+    {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
+    },
+    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
     },
     {
-      "entry": 2676652,
-      "team": "Miftah's Team",
-      "manager": "Miftah Tegar"
-    },
-    {
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
+    },
+    {
+      "entry": 2676652,
+      "team": "Miftah's Team",
+      "manager": "Miftah Tegar"
     },
     {
       "entry": 5126129,
@@ -302,14 +307,14 @@
       "manager": "Fathurrohman Hammam"
     },
     {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
       "entry": 7467749,
       "team": "Bungong Jeumpa",
       "manager": "Arik Muharrik"
-    },
-    {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
     },
     {
       "entry": 6797821,
@@ -320,11 +325,6 @@
       "entry": 1848061,
       "team": "Sepupu Amorim",
       "manager": "Aziz Gratama"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 117245,
@@ -368,7 +368,7 @@
       "1": 56,
       "2": 92,
       "3": 40,
-      "4": 66
+      "4": 67
     },
     "85270": {
       "1": 61,
@@ -380,7 +380,7 @@
       "1": 46,
       "2": 76,
       "3": 46,
-      "4": 56
+      "4": 58
     },
     "134863": {
       "1": 56,
@@ -392,7 +392,7 @@
       "1": 64,
       "2": 68,
       "3": 39,
-      "4": 88
+      "4": 86
     },
     "386731": {
       "1": 60,
@@ -404,7 +404,7 @@
       "1": 49,
       "2": 99,
       "3": 55,
-      "4": 43
+      "4": 51
     },
     "720103": {
       "1": 55,
@@ -428,13 +428,13 @@
       "1": 55,
       "2": 83,
       "3": 55,
-      "4": 71
+      "4": 72
     },
     "1848061": {
       "1": 40,
       "2": 72,
       "3": 64,
-      "4": 49
+      "4": 50
     },
     "1854266": {
       "1": 43,
@@ -464,13 +464,13 @@
       "1": 48,
       "2": 84,
       "3": 47,
-      "4": 66
+      "4": 67
     },
     "3204276": {
       "1": 51,
       "2": 71,
       "3": 41,
-      "4": 89
+      "4": 90
     },
     "3257881": {
       "1": 63,
@@ -482,19 +482,19 @@
       "1": 47,
       "2": 60,
       "3": 54,
-      "4": 46
+      "4": 47
     },
     "3623791": {
       "1": 44,
       "2": 114,
       "3": 45,
-      "4": 63
+      "4": 64
     },
     "3623867": {
       "1": 32,
       "2": 87,
       "3": 45,
-      "4": 74
+      "4": 85
     },
     "3661046": {
       "1": 47,
@@ -506,13 +506,13 @@
       "1": 54,
       "2": 81,
       "3": 48,
-      "4": 75
+      "4": 76
     },
     "4746517": {
       "1": 55,
       "2": 94,
       "3": 39,
-      "4": 90
+      "4": 94
     },
     "4905253": {
       "1": 60,
@@ -560,13 +560,13 @@
       "1": 42,
       "2": 73,
       "3": 75,
-      "4": 50
+      "4": 52
     },
     "7573068": {
       "1": 57,
       "2": 72,
       "3": 59,
-      "4": 99
+      "4": 107
     },
     "7971869": {
       "1": 58,
@@ -578,11 +578,11 @@
       "1": 54,
       "2": 85,
       "3": 46,
-      "4": 40
+      "4": 57
     },
     "10265003": {
       "3": 32,
-      "4": 76
+      "4": 77
     }
   }
 }
