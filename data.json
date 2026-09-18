@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-18T10:58:33.534Z"
+    "lastUpdated": "2026-09-18T16:13:06.470Z"
   },
   "events": [
     {
@@ -283,14 +283,14 @@
       "manager": "Multazim Alhaq"
     },
     {
-      "entry": 3052973,
-      "team": "siammal",
-      "manager": "muammal hamidy"
-    },
-    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
+    },
+    {
+      "entry": 3052973,
+      "team": "siammal",
+      "manager": "muammal hamidy"
     },
     {
       "entry": 2676652,
