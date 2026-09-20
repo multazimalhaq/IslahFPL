@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-09-20T11:04:50.058Z"
+    "lastUpdated": "2026-09-20T15:51:22.481Z"
   },
   "events": [
     {
@@ -188,11 +188,6 @@
       "manager": "buki bukan"
     },
     {
-      "entry": 5138718,
-      "team": "minaminu’s fc",
-      "manager": "Elsyaif Aminullah"
-    },
-    {
       "entry": 7573068,
       "team": "Antasena FC",
       "manager": "Muhammad Rizqi Az Zayyad"
@@ -203,14 +198,9 @@
       "manager": "Muhammad Abiyyu Ilyas"
     },
     {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
-    },
-    {
-      "entry": 1845265,
-      "team": "Hiliwir Idrocq",
-      "manager": "Agung Maٰruf"
+      "entry": 5138718,
+      "team": "minaminu’s fc",
+      "manager": "Elsyaif Aminullah"
     },
     {
       "entry": 4746517,
@@ -218,19 +208,24 @@
       "manager": "Salman Syihabul"
     },
     {
+      "entry": 3623791,
+      "team": "Metropolitan United",
+      "manager": "Shiba Inu"
+    },
+    {
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
+    },
+    {
       "entry": 2678390,
       "team": "Aksara",
       "manager": "Nuha F"
     },
     {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
-    },
-    {
-      "entry": 3623791,
-      "team": "Metropolitan United",
-      "manager": "Shiba Inu"
+      "entry": 1845265,
+      "team": "Hiliwir Idrocq",
+      "manager": "Agung Maٰruf"
     },
     {
       "entry": 3257881,
@@ -243,9 +238,34 @@
       "manager": "Hasbi Rifasakti"
     },
     {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
+    },
+    {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
+    },
+    {
+      "entry": 4656762,
+      "team": "MAMPRANK FC",
+      "manager": "Zaidan Izzatulhaq Aljundi"
+    },
+    {
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
+    },
+    {
       "entry": 238148,
       "team": "Jangan dilihat",
       "manager": "faris azim"
+    },
+    {
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
       "entry": 1838776,
@@ -258,31 +278,6 @@
       "manager": "Akid Abdussalam"
     },
     {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
-    },
-    {
-      "entry": 4656762,
-      "team": "MAMPRANK FC",
-      "manager": "Zaidan Izzatulhaq Aljundi"
-    },
-    {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
-      "entry": 83181,
-      "team": "FPL Modal Firasat",
-      "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 3661046,
-      "team": "Homingworm",
-      "manager": "H. Islah"
-    },
-    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
@@ -291,11 +286,6 @@
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
-    },
-    {
-      "entry": 5126129,
-      "team": "Arah Timur",
-      "manager": "Faishal Fajari"
     },
     {
       "entry": 8477463,
@@ -308,6 +298,26 @@
       "manager": "Muhammad Tsaqif Fikry"
     },
     {
+      "entry": 83181,
+      "team": "FPL Modal Firasat",
+      "manager": "Hassan Musthafa"
+    },
+    {
+      "entry": 5126129,
+      "team": "Arah Timur",
+      "manager": "Faishal Fajari"
+    },
+    {
+      "entry": 3661046,
+      "team": "Homingworm",
+      "manager": "H. Islah"
+    },
+    {
+      "entry": 2463125,
+      "team": "New Coral FC",
+      "manager": "Hanzo GM"
+    },
+    {
       "entry": 7467749,
       "team": "Bungong Jeumpa",
       "manager": "Arik Muharrik"
@@ -318,11 +328,6 @@
       "manager": "Miftah Tegar"
     },
     {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
-    },
-    {
       "entry": 1848061,
       "team": "Sepupu Amorim",
       "manager": "Aziz Gratama"
@@ -331,11 +336,6 @@
       "entry": 117245,
       "team": "PUNDIDUDEDOT",
       "manager": "Hanif Kasyfillah"
-    },
-    {
-      "entry": 2463125,
-      "team": "New Coral FC",
-      "manager": "Hanzo GM"
     },
     {
       "entry": 6194119,
