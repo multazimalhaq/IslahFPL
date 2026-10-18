@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-10-17T20:24:23.716Z"
+    "lastUpdated": "2026-10-18T04:03:42.501Z"
   },
   "events": [
     {
@@ -225,14 +225,14 @@
       "manager": "Salman Syihabul"
     },
     {
-      "entry": 3204276,
-      "team": "La Fee Verte FC",
-      "manager": "Akid Abdussalam"
-    },
-    {
       "entry": 1838776,
       "team": "KING EMYU",
       "manager": "Aep Muhaemin"
+    },
+    {
+      "entry": 3204276,
+      "team": "La Fee Verte FC",
+      "manager": "Akid Abdussalam"
     },
     {
       "entry": 1854266,
