@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-10-19T12:46:55.437Z"
+    "lastUpdated": "2026-10-19T22:12:33.318Z"
   },
   "events": [
     {
@@ -56,11 +56,11 @@
     },
     {
       "id": 13,
-      "deadline": "2026-12-02T18:30:00Z"
+      "deadline": "2026-12-01T18:30:00Z"
     },
     {
       "id": 14,
-      "deadline": "2026-12-05T13:30:00Z"
+      "deadline": "2026-12-05T11:00:00Z"
     },
     {
       "id": 15,
@@ -68,7 +68,7 @@
     },
     {
       "id": 16,
-      "deadline": "2026-12-19T13:30:00Z"
+      "deadline": "2026-12-19T11:00:00Z"
     },
     {
       "id": 17,
@@ -240,24 +240,24 @@
       "manager": "Shiba Inu"
     },
     {
-      "entry": 1838776,
-      "team": "KING EMYU",
-      "manager": "Aep Muhaemin"
-    },
-    {
       "entry": 1845265,
       "team": "Hiliwir Idrocq",
       "manager": "Agung Maٰruf"
     },
     {
-      "entry": 7560538,
-      "team": "Saud",
-      "manager": "Fathurrohman Hammam"
+      "entry": 1838776,
+      "team": "KING EMYU",
+      "manager": "Aep Muhaemin"
     },
     {
       "entry": 1854266,
       "team": "Hattrick Hotties",
       "manager": "Fatah Ishaq"
+    },
+    {
+      "entry": 7560538,
+      "team": "Saud",
+      "manager": "Fathurrohman Hammam"
     },
     {
       "entry": 6797821,
@@ -295,6 +295,11 @@
       "manager": "Arik Muharrik"
     },
     {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
@@ -303,11 +308,6 @@
       "entry": 715380,
       "team": "Army of the Pitch",
       "manager": "Miftah Faridl"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 5126129,
