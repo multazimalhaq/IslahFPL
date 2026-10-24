@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-10-23T21:15:53.428Z"
+    "lastUpdated": "2026-10-24T04:10:01.388Z"
   },
   "events": [
     {
@@ -206,14 +206,14 @@
       "manager": "buki bukan"
     },
     {
-      "entry": 46579,
-      "team": "Summarecon City",
-      "manager": "babar bener"
-    },
-    {
       "entry": 3257881,
       "team": "Title Rice",
       "manager": "Shidiq Muhammad"
+    },
+    {
+      "entry": 46579,
+      "team": "Summarecon City",
+      "manager": "babar bener"
     },
     {
       "entry": 2678390,
@@ -231,14 +231,19 @@
       "manager": "Salman Syihabul"
     },
     {
+      "entry": 3623791,
+      "team": "Metropolitan United",
+      "manager": "Shiba Inu"
+    },
+    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
     },
     {
-      "entry": 3623791,
-      "team": "Metropolitan United",
-      "manager": "Shiba Inu"
+      "entry": 1838776,
+      "team": "KING EMYU",
+      "manager": "Aep Muhaemin"
     },
     {
       "entry": 1845265,
@@ -246,9 +251,9 @@
       "manager": "Agung Maٰruf"
     },
     {
-      "entry": 1838776,
-      "team": "KING EMYU",
-      "manager": "Aep Muhaemin"
+      "entry": 7971869,
+      "team": "Pick Me Up",
+      "manager": "Hasbi Rifasakti"
     },
     {
       "entry": 1854266,
@@ -271,19 +276,9 @@
       "manager": "Zaidan Izzatulhaq Aljundi"
     },
     {
-      "entry": 7971869,
-      "team": "Pick Me Up",
-      "manager": "Hasbi Rifasakti"
-    },
-    {
       "entry": 7467749,
       "team": "Bungong Jeumpa",
       "manager": "Arik Muharrik"
-    },
-    {
-      "entry": 3623867,
-      "team": "Jimboy",
-      "manager": "Multazim Alhaq"
     },
     {
       "entry": 238148,
@@ -291,19 +286,24 @@
       "manager": "faris azim"
     },
     {
+      "entry": 3623867,
+      "team": "Jimboy",
+      "manager": "Multazim Alhaq"
+    },
+    {
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
     },
     {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
-    },
-    {
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
+    },
+    {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 715380,
@@ -400,7 +400,7 @@
       "5": 53,
       "6": 63,
       "7": 57,
-      "8": 0
+      "8": 1
     },
     "134863": {
       "1": 56,
@@ -410,7 +410,7 @@
       "5": 71,
       "6": 68,
       "7": 85,
-      "8": 0
+      "8": 2
     },
     "238148": {
       "1": 64,
@@ -460,7 +460,7 @@
       "5": 48,
       "6": 47,
       "7": 35,
-      "8": 0
+      "8": 9
     },
     "1838776": {
       "1": 54,
@@ -490,7 +490,7 @@
       "5": 47,
       "6": 52,
       "7": 58,
-      "8": 0
+      "8": 2
     },
     "1854266": {
       "1": 43,
@@ -520,7 +520,7 @@
       "5": 28,
       "6": 47,
       "7": 73,
-      "8": 0
+      "8": 7
     },
     "2678390": {
       "1": 58,
@@ -560,7 +560,7 @@
       "5": 55,
       "6": 81,
       "7": 65,
-      "8": 0
+      "8": 2
     },
     "3623417": {
       "1": 47,
@@ -600,7 +600,7 @@
       "5": 37,
       "6": 57,
       "7": 65,
-      "8": 0
+      "8": 2
     },
     "4656762": {
       "1": 54,
@@ -680,7 +680,7 @@
       "5": 52,
       "6": 54,
       "7": 72,
-      "8": 0
+      "8": 8
     },
     "7501986": {
       "1": 55,
