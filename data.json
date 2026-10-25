@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-10-24T20:32:55.528Z"
+    "lastUpdated": "2026-10-25T04:12:44.392Z"
   },
   "events": [
     {
@@ -171,14 +171,14 @@
   ],
   "managers": [
     {
-      "entry": 85270,
-      "team": "POWER DANGER FC",
-      "manager": "Kas Hartadi"
-    },
-    {
       "entry": 134863,
       "team": "Juru Kunci",
       "manager": "Sulthan Alkatiri"
+    },
+    {
+      "entry": 85270,
+      "team": "POWER DANGER FC",
+      "manager": "Kas Hartadi"
     },
     {
       "entry": 386731,
@@ -231,11 +231,6 @@
       "manager": "Fatah Ishaq"
     },
     {
-      "entry": 83181,
-      "team": "FPL Modal Firasat",
-      "manager": "Hassan Musthafa"
-    },
-    {
       "entry": 4746517,
       "team": "kadalnyungsep",
       "manager": "Salman Syihabul"
@@ -244,6 +239,11 @@
       "entry": 3204276,
       "team": "La Fee Verte FC",
       "manager": "Akid Abdussalam"
+    },
+    {
+      "entry": 83181,
+      "team": "FPL Modal Firasat",
+      "manager": "Hassan Musthafa"
     },
     {
       "entry": 3623791,
