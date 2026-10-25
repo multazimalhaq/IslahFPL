@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-10-25T15:54:38.640Z"
+    "lastUpdated": "2026-10-25T20:40:13.336Z"
   },
   "events": [
     {
@@ -171,24 +171,24 @@
   ],
   "managers": [
     {
-      "entry": 85270,
-      "team": "POWER DANGER FC",
-      "manager": "Kas Hartadi"
-    },
-    {
       "entry": 134863,
       "team": "Juru Kunci",
       "manager": "Sulthan Alkatiri"
     },
     {
-      "entry": 386731,
-      "team": "Anxious Saturday",
-      "manager": "Syahr Ghaffari"
+      "entry": 85270,
+      "team": "POWER DANGER FC",
+      "manager": "Kas Hartadi"
     },
     {
       "entry": 7501986,
       "team": "Goal Diggers",
       "manager": "Muhammad Abiyyu Ilyas"
+    },
+    {
+      "entry": 386731,
+      "team": "Anxious Saturday",
+      "manager": "Syahr Ghaffari"
     },
     {
       "entry": 5138718,
@@ -211,14 +211,19 @@
       "manager": "babar bener"
     },
     {
+      "entry": 4746517,
+      "team": "kadalnyungsep",
+      "manager": "Salman Syihabul"
+    },
+    {
       "entry": 7560538,
       "team": "Saud",
       "manager": "Fathurrohman Hammam"
     },
     {
-      "entry": 4746517,
-      "team": "kadalnyungsep",
-      "manager": "Salman Syihabul"
+      "entry": 1854266,
+      "team": "Hattrick Hotties",
+      "manager": "Fatah Ishaq"
     },
     {
       "entry": 3257881,
@@ -236,9 +241,14 @@
       "manager": "Agung Maٰruf"
     },
     {
-      "entry": 1854266,
-      "team": "Hattrick Hotties",
-      "manager": "Fatah Ishaq"
+      "entry": 3623791,
+      "team": "Metropolitan United",
+      "manager": "Shiba Inu"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
       "entry": 3204276,
@@ -246,19 +256,9 @@
       "manager": "Akid Abdussalam"
     },
     {
-      "entry": 3623791,
-      "team": "Metropolitan United",
-      "manager": "Shiba Inu"
-    },
-    {
       "entry": 83181,
       "team": "FPL Modal Firasat",
       "manager": "Hassan Musthafa"
-    },
-    {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
     },
     {
       "entry": 4656762,
@@ -276,9 +276,9 @@
       "manager": "Muhammad Tsaqif Fikry"
     },
     {
-      "entry": 1838776,
-      "team": "KING EMYU",
-      "manager": "Aep Muhaemin"
+      "entry": 3052973,
+      "team": "siammal",
+      "manager": "muammal hamidy"
     },
     {
       "entry": 7971869,
@@ -286,9 +286,9 @@
       "manager": "Hasbi Rifasakti"
     },
     {
-      "entry": 3052973,
-      "team": "siammal",
-      "manager": "muammal hamidy"
+      "entry": 1838776,
+      "team": "KING EMYU",
+      "manager": "Aep Muhaemin"
     },
     {
       "entry": 238148,
@@ -301,14 +301,19 @@
       "manager": "Miftah Tegar"
     },
     {
-      "entry": 5126129,
-      "team": "Arah Timur",
-      "manager": "Faishal Fajari"
-    },
-    {
       "entry": 2463125,
       "team": "New Coral FC",
       "manager": "Hanzo GM"
+    },
+    {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
+      "entry": 5126129,
+      "team": "Arah Timur",
+      "manager": "Faishal Fajari"
     },
     {
       "entry": 715380,
@@ -319,11 +324,6 @@
       "entry": 4905253,
       "team": "LT squad",
       "manager": "Daudi Fathan"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 117245,
