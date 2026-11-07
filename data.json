@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-11-07T05:34:44.769Z"
+    "lastUpdated": "2026-11-07T12:46:38.580Z"
   },
   "events": [
     {
@@ -173,14 +173,14 @@
   ],
   "managers": [
     {
-      "entry": 85270,
-      "team": "POWER DANGER FC",
-      "manager": "Kas Hartadi"
-    },
-    {
       "entry": 134863,
       "team": "Juru Kunci",
       "manager": "Sulthan Alkatiri"
+    },
+    {
+      "entry": 85270,
+      "team": "POWER DANGER FC",
+      "manager": "Kas Hartadi"
     },
     {
       "entry": 7501986,
@@ -278,14 +278,14 @@
       "manager": "muammal hamidy"
     },
     {
-      "entry": 7467749,
-      "team": "Bungong Jeumpa",
-      "manager": "Arik Muharrik"
-    },
-    {
       "entry": 7971869,
       "team": "Pick Me Up",
       "manager": "Hasbi Rifasakti"
+    },
+    {
+      "entry": 7467749,
+      "team": "Bungong Jeumpa",
+      "manager": "Arik Muharrik"
     },
     {
       "entry": 8477463,
