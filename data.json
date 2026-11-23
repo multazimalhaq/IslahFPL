@@ -3,7 +3,7 @@
     "id": 754071,
     "name": "Islah League",
     "season": "2026/27",
-    "lastUpdated": "2026-11-23T07:01:58.915Z"
+    "lastUpdated": "2026-11-23T23:41:36.135Z"
   },
   "events": [
     {
@@ -209,14 +209,14 @@
       "manager": "Shidiq Muhammad"
     },
     {
-      "entry": 5138718,
-      "team": "minaminu’s fc",
-      "manager": "Elsyaif Aminullah"
-    },
-    {
       "entry": 386731,
       "team": "Anxious Saturday",
       "manager": "Syahr Ghaffari"
+    },
+    {
+      "entry": 5138718,
+      "team": "minaminu’s fc",
+      "manager": "Elsyaif Aminullah"
     },
     {
       "entry": 7560538,
@@ -249,16 +249,6 @@
       "manager": "Zaidan Izzatulhaq Aljundi"
     },
     {
-      "entry": 2678390,
-      "team": "Aksara",
-      "manager": "Nuha F"
-    },
-    {
-      "entry": 1845265,
-      "team": "Hiliwir Idrocq",
-      "manager": "Agung Maٰruf"
-    },
-    {
       "entry": 3204276,
       "team": "La Fee Verte FC",
       "manager": "Akid Abdussalam"
@@ -267,6 +257,16 @@
       "entry": 2463125,
       "team": "New Coral FC",
       "manager": "Hanzo GM"
+    },
+    {
+      "entry": 2678390,
+      "team": "Aksara",
+      "manager": "Nuha F"
+    },
+    {
+      "entry": 1845265,
+      "team": "Hiliwir Idrocq",
+      "manager": "Agung Maٰruf"
     },
     {
       "entry": 7971869,
@@ -279,6 +279,11 @@
       "manager": "Arik Muharrik"
     },
     {
+      "entry": 8477463,
+      "team": "Maju Jaya",
+      "manager": "Abdurrahman adiy"
+    },
+    {
       "entry": 6797821,
       "team": "SAKIP FC",
       "manager": "Muhammad Tsaqif Fikry"
@@ -287,11 +292,6 @@
       "entry": 3052973,
       "team": "siammal",
       "manager": "muammal hamidy"
-    },
-    {
-      "entry": 8477463,
-      "team": "Maju Jaya",
-      "manager": "Abdurrahman adiy"
     },
     {
       "entry": 1838776,
@@ -324,14 +324,14 @@
       "manager": "Faishal Fajari"
     },
     {
-      "entry": 715380,
-      "team": "Army of the Pitch",
-      "manager": "Miftah Faridl"
-    },
-    {
       "entry": 117245,
       "team": "PUNDIDUDEDOT",
       "manager": "Hanif Kasyfillah"
+    },
+    {
+      "entry": 715380,
+      "team": "Army of the Pitch",
+      "manager": "Miftah Faridl"
     },
     {
       "entry": 2676652,
